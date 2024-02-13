@@ -8,7 +8,6 @@
         android:icon="@drawable/rent"
         android:title="대여" />
 
-
     <item
         android:id="@+id/tab2"
         app:showAsAction="ifRoom"
@@ -21,7 +20,6 @@
         android:enabled="true"
         android:icon="@drawable/home"
         android:title="홈" />
-
 
     <item
         android:id="@+id/tab4"
