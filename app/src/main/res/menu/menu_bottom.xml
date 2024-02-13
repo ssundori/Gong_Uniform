@@ -5,36 +5,34 @@
         android:id="@+id/tab1"
         app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@drawable/rent"
+        android:icon="@android:drawable/ic_dialog_info"
         android:title="대여" />
-
 
     <item
         android:id="@+id/tab2"
         app:showAsAction="ifRoom"
-        android:icon="@drawable/map"
+        android:icon="@android:drawable/ic_dialog_map"
         android:title="지도" />
 
     <item
         android:id="@+id/tab3"
         app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@drawable/home"
+        android:icon="@android:drawable/ic_dialog_map"
         android:title="홈" />
-
 
     <item
         android:id="@+id/tab4"
         app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@drawable/qr"
+        android:icon="@android:drawable/ic_dialog_map"
         android:title="QR" />
 
     <item
         android:id="@+id/tab5"
         app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@drawable/mypage"
+        android:icon=""
         android:title="마이페이지" />
 
 </menu>
