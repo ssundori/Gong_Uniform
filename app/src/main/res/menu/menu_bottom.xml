@@ -5,7 +5,7 @@
         android:id="@+id/tab1"
         app:showAsAction="ifRoom"
         android:enabled="true"
-        android:icon="@drawable/map"
+        android:icon="@drawable/rent"
         android:title="대여" />
 
 
