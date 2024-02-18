@@ -3,29 +3,14 @@ package com.example.gongu;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
-
-
-
-
-
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
 
-    TextView textView;
     Fragment_rent fragmentRent;
     Fragment_map fragmentMap;
     Fragment_home fragmentHome;
@@ -37,16 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         fragmentRent = new Fragment_rent();
         fragmentMap = new Fragment_map();
         fragmentHome = new Fragment_home();
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
 
-
-
-        //네비게이션 바
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentRent).commit();
 
         BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
@@ -80,57 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }
         );
-
-
-
-
-        //지도 페이지
-        textView = findViewById(R.id.textView);
-
-        Button button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startLocationService();
-            }
-        });
-
     }
 
-    public void startLocationService() {
-        LocationManager manager= (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-
-        try {
-            Location location = manager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
-            if (location != null) {
-                double latitude = location.getLatitude();
-                double longitude = location.getLongitude();
-                String message = "최근 위치 -> Latitude : " + latitude + "\nLongitude : " + longitude;
-
-                textView.setText(message);
-            }
-
-            GPSListener gpsListener = new GPSListener();
-            long minTime = 10000; //최소 시간 10초, 10초마다 위치 정보 전달받음
-            float minDistance = 0; //최소 거리 설정
-
-            manager.requestLocationUpdates(LocationManager.GPS_PROVIDER, minTime, minDistance, gpsListener);
-            Toast.makeText(getApplicationContext(), "내 위치확인 요청함", Toast.LENGTH_SHORT).show();
-        } catch(SecurityException e) {
-            e.printStackTrace();
-        }
     }
-
-    class GPSListener implements LocationListener {
-        public void onLocationChanged(Location location) {
-            Double latitude = location.getLatitude();
-            Double longitude = location.getLongitude();
-            String message = "내 위치 -> Latitude : " + latitude + "\nLongitude : " + longitude;
-            textView.setText(message);
-        }
-
-        public void onProviderDisabled(String provider) { }
-        public void onProviderEnabled(String provider) { }
-        public void onStatusChanged(String provider, int status, Bundle extras) { }
-    }
-}
