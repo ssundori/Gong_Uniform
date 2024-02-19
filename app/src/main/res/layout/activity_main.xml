@@ -25,4 +25,17 @@
         app:itemTextColor="@drawable/item_color"
         app:menu="@menu/menu_bottom" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout> <!--화면 하단에 보여질 수 있도록-->
