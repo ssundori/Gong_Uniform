@@ -16,6 +16,10 @@
         android:theme="@style/Theme.GongU"
         tools:targetApi="31">
         <activity
+            android:name=".selectUniform"
+            android:label="유니폼선택"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -27,4 +31,3 @@
     </application>
 
 </manifest>
-

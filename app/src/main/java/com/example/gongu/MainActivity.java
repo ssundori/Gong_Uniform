@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -24,6 +25,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
+    public static final int REQUEST_CODE_NEXT = 101;
 
     TextView textView;
     Fragment_rent fragmentRent;
@@ -43,6 +45,28 @@ public class MainActivity extends AppCompatActivity {
         fragmentHome = new Fragment_home();
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
+
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "버튼이 눌렸어요.",
+                        Toast.LENGTH_LONG).show();
+            }
+        });
+
+        Button nextButton = findViewById(R.id.nextButton);
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), selectUniform.class);
+                startActivity(intent);
+
+            }
+        });
+
+
+
+
 
 
 
@@ -85,29 +109,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //지도 페이지
-        textView = findViewById(R.id.textView);
 
-        Button button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startLocationService();
-            }
-        });
-
-        public void onTabSelected(int position){
-            if (position == 0) {
-                bottomNavigation.setSelectedItemId(R.id.tab1);
-            } else if (position == 1) {
-                bottomNavigation.setSelectedItemId(R.id.tab2);
-            } else if (position == 2) {
-                bottomNavigation.setSelectedItemId(R.id.tab3);
-            } else if (position == 3) {
-                bottomNavigation.setSelectedItemId(R.id.tab4);
-            } else if (position == 4) {
-                bottomNavigation.setSelectedItemId(R.id.tab5);
-            }
-        }
 
     }
 
