@@ -4,7 +4,6 @@
     android:layout_height="match_parent"
     android:background="#FFFFF"
     android:orientation="vertical">
-<!--변경1-->
 
     <TextView
         android:id="@+id/contentsTextView"
