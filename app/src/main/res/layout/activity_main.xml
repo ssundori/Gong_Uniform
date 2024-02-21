@@ -44,7 +44,11 @@
         android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="다음" />
+        android:text="다음"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="577dp" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout> <!--화면 하단에 보여질 수 있도록-->
