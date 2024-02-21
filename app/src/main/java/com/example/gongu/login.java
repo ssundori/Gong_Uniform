@@ -11,18 +11,26 @@ import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
 import android.widget.TextView;
 
-public class login extends AppCompatActivity {
+// 화면 전환을 위함 import 추가
+import android.content.Intent;
+import android.view.View;
+import android.widget.Button;
 
+public class login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Button imageButton = (Button) findViewById(R.id.loginbtn);
+        imageButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
     }
-
-    // 문제 발생 23~25줄
-    String text = "Find Password";
-    SpannableString ss = new SpannableString(text);
-    ss.setSpan(new UnderlineSpan(), 5, 7, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
-
 }
 
