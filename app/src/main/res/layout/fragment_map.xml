@@ -11,17 +11,29 @@
         android:layout_height="wrap_content"
         android:text="TextView" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <TextView
+        android:id="@+id/locationText"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="683dp"
-        android:text="내 위치 확인용" />
+        android:text="locationText" />
 
     <Button
         android:id="@+id/button_fragment1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="지도 페이지" />
+
+    <Button
+        android:id="@+id/locationButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="locationButton" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:layout_marginBottom="683dp"
+        android:text="내 위치 확인용" />
 
 </LinearLayout>

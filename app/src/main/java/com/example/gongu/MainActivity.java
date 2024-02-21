@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
         //네비게이션 바
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentRent).commit();
 

@@ -24,6 +24,8 @@
             android:layout_marginBottom="683dp"
             android:text="내 위치 확인용" />
 
+
+
     </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
