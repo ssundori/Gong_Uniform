@@ -3,12 +3,215 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC107">
+    android:background="@color/white"
+    android:padding="16dp">
 
-    <Button
-        android:id="@+id/button_fragment1"
-        android:layout_width="wrap_content"
+    <!-- 마이페이지 글씨 -->
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="마이페이지" />
+        android:gravity="left"
+        android:text="마이페이지"
+        android:textSize="25sp"
+        android:textColor="#6750a4"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+
+    <!-- (이름) 글씨 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="김이화 님"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+
+    <!-- 주문내역 글씨 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="주문내역"
+        android:textSize="23sp"
+        >
+
+    </TextView>
+
+    <!-- 결제완료 박스1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ced4da"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 결제완료 글씨 -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight="2"
+                    android:text="결제완료"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="35sp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:src="@drawable/qr"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <!-- 주문 정보 글씨 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="주문 정보 : \n김재환, 서울원정, M size"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                >
+
+            </TextView>
+
+            <!-- 대여 시작 시각 글씨 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="대여 시작 시각 : \n2024년 2월 21일 16시 32분"
+                android:textSize="18sp"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 결제완료 박스2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ced4da"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:background="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- 결제완료 글씨 -->
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:layout_weight="2"
+                    android:text="결제완료"
+                    android:textSize="20sp"
+                    >
+
+                </TextView>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="35sp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:src="@drawable/qr"
+                    android:layout_marginTop="3dp"/>
+
+            </LinearLayout>
+
+            <!-- 주문 정보 글씨 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="주문 정보 : \n김재환, 서울원정, M size"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"
+                >
+
+            </TextView>
+
+            <!-- 대여 시작 시각 글씨 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="대여 시작 시각 : \n2024년 2월 21일 16시 32분"
+                android:textSize="18sp"
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
