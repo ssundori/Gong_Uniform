@@ -55,13 +55,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button nextButton = findViewById(R.id.nextButton);
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), selectUniform.class);
-                startActivity(intent);
-            }
-        });
+
+
 
 
 
