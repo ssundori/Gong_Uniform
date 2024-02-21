@@ -28,11 +28,12 @@ public class MainActivity extends AppCompatActivity {
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentRent).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
 
         BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
-        bottomNavigation.setOnNavigationItemSelectedListener(
-                new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigation.setSelectedItemId(R.id.tab3);
+        bottomNavigation.setOnItemSelectedListener(
+                new BottomNavigationView.OnItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         if (item.getItemId() == R.id.tab1) {
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                             getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentRent).commit();
                             return true;
                         } else if (item.getItemId() == R.id.tab2) {
-                            Toast.makeText(getApplicationContext(), "QR 페이지 선택됨", Toast.LENGTH_LONG).show();
+                            Toast.makeText(getApplicationContext(), "지도 페이지 선택됨", Toast.LENGTH_LONG).show();
                             getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentMap).commit();
                             return true;
                         } else if (item.getItemId() == R.id.tab3) {
