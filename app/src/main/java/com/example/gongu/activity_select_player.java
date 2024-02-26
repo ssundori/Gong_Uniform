@@ -2,6 +2,12 @@ package com.example.gongu;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.content.Intent;
+import android.view.LayoutInflater;
+import android.widget.LinearLayout;
+import android.view.View;
+import android.widget.Button;
+import android.content.Context;
 
 //inflater  처리 안됨
 
@@ -16,11 +22,11 @@ public class activity_select_player extends AppCompatActivity {
         container = findViewById(R.id.container);
 
         Button button = findViewById(R.id.button);
-        button.setOnclickListener(new View.OnClickListener() {
-            @override
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View view) {
                 LayoutInflater inflater = (LayoutInflater)
-                        getSystemService(Context.LAYOUT+INFLATER_SERVICE);
+                        getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 inflater.inflate(R.layout.sub_player, container, true);
             }
         });
