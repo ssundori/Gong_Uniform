@@ -2,7 +2,6 @@ package com.example.gongu;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.view.View;
