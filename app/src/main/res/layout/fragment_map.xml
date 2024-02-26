@@ -7,41 +7,55 @@
     android:layout_height="match_parent"
     android:background="#FFC187">
 
-    <fragment
+    <FrameLayout
+        android:id="@+id/mapContainer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/map"
-        android:name="com.google.android.gms.maps.SupportMapFragment" />
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/listContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="addressText" />
+
+        <Button
+            android:id="@+id/button_fragment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지도 페이지" />
+
+        <Button
+            android:id="@+id/locationButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="locationButton" />
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="locationText" />
+    </FrameLayout>
 
     <!--<TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView" />-->
-
-    <TextView
-        android:id="@+id/locationText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="locationText" />
-
-    <Button
-        android:id="@+id/button_fragment1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="지도 페이지" />
-
-    <Button
-        android:id="@+id/locationButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="locationButton" />
-
-    <TextView
-        android:id="@+id/addressText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="addressText" />
 
 
 </LinearLayout>
