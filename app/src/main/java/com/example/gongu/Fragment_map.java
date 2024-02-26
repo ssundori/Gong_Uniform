@@ -210,7 +210,7 @@ public class Fragment_map extends Fragment implements OnMapReadyCallback {
         mMap = googleMap;
 
         LatLng SEOUL = new LatLng(37.556, 126.97);
-        LatLng Jamsil1 = new LatLng(37.512356, 126.072771);
+        LatLng Jamsil1 = new LatLng(37.511881, 127.073653);
 
         MarkerOptions markerOptions = new MarkerOptions();
         MarkerOptions markerOptions2 = new MarkerOptions();
