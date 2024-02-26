@@ -16,22 +16,40 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:text="공유니폼"
-            android:textSize="25sp"
+            android:textSize="25dp"
             android:textColor="#6750a4"
-            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
             >
 
         </TextView>
 
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:src="@drawable/rent"
+            android:paddingRight="55dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7" />
+
         <android.widget.Button
             android:id="@+id/HomeToRentBtn"
             android:layout_width="0dp"
-            android:layout_height="35dp"
-            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3"
             android:gravity="center"
-            android:text="대여하러 가기 >">
+            android:background="@drawable/bin_btn_login"
+            android:text="대여하러 가기 >"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp">
 
         </android.widget.Button>
     </LinearLayout>
@@ -41,7 +59,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="10dp">
+        android:layout_marginTop="20dp">
 
         <!-- 글씨 -->
         <TextView
@@ -93,7 +111,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="10dp">
+        android:layout_marginTop="10dp">
 
         <!-- 글씨 -->
         <TextView
@@ -145,7 +163,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="10dp">
+        android:layout_marginTop="10dp">
 
         <!-- 글씨 -->
         <TextView
@@ -197,7 +215,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginBottom="10dp">
+        android:layout_marginTop="10dp">
 
         <!-- 글씨 -->
         <TextView
