@@ -22,7 +22,7 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        Button imageButton = (Button) findViewById(R.id.loginbtn);
+        Button imageButton = (Button) findViewById(R.id.LoginBtn);
         imageButton.setOnClickListener(new View.OnClickListener() {
 
             @Override

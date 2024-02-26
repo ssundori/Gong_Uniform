@@ -3,12 +3,244 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFC0cb">
+    android:background="@color/white"
+    android:padding="16dp">
 
-    <Button
-        android:id="@+id/button_fragment1"
-        android:layout_width="wrap_content"
+    <!-- 공유니폼 글씨 -->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="홈 페이지" />
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_weight="2"
+            android:text="공유니폼"
+            android:textSize="25sp"
+            android:textColor="#6750a4"
+            android:layout_marginBottom="20dp"
+            >
+
+        </TextView>
+
+        <android.widget.Button
+            android:id="@+id/HomeToRentBtn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="대여하러 가기 >">
+
+        </android.widget.Button>
+    </LinearLayout>
+
+    <!-- 이 달의 추천 선수 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <!-- 글씨 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="이 달의 추천 선수"
+            android:textSize="23sp"
+            >
+
+        </TextView>
+
+        <!-- 박스 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ced4da"
+            android:layout_marginTop="1dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginRight="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- (이름)님을 위한 추천 선수 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <!-- 글씨 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="김이화님을 위한 추천 선수"
+            android:textSize="23sp"
+            >
+
+        </TextView>
+
+        <!-- 박스 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ced4da"
+            android:layout_marginTop="1dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginRight="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- (이름)님을 위한 추천 유니폼 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <!-- 글씨 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="김이화님을 위한 추천 유니폼"
+            android:textSize="23sp"
+            >
+
+        </TextView>
+
+        <!-- 박스 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ced4da"
+            android:layout_marginTop="1dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginRight="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- (~월) 인기 종목 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+        <!-- 글씨 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="2월 인기 종목"
+            android:textSize="23sp"
+            >
+
+        </TextView>
+
+        <!-- 박스 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ced4da"
+            android:layout_marginTop="1dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:layout_marginRight="8dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
