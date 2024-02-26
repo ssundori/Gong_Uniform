@@ -6,24 +6,24 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 // Button 추가
-
-import android.widget.Button;
+// import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 // FragmentTransaction 추가
-import androidx.fragment.app.FragmentTransaction;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+// import androidx.fragment.app.FragmentTransaction;
+// import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Fragment_home extends Fragment {
 
     // 대여 버튼도 있으니 view로 전달
-    private View view;
-    private Button GoRentBtn;
+    // private View view;
+    // private Button GoRentBtn;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_home, container, false);
+        return inflater.inflate(R.layout.fragment_home, container, false);
+
+        /*view = inflater.inflate(R.layout.fragment_home, container, false);
         GoRentBtn = view.findViewById(R.id.HomeToRentBtn);
         GoRentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +34,6 @@ public class Fragment_home extends Fragment {
                 transaction.commit();
             }
         });
-        return view;
+        return view;*/
     }
 }
