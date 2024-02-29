@@ -3,6 +3,12 @@ package com.example.gongu;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -18,6 +24,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+    public static final int REQUEST_CODE_NEXT = 101;
 
     TextView textView;
     Button button;
@@ -38,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         fragmentHome = new Fragment_home();
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
+
+
 
         //네비게이션 바
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
@@ -74,10 +83,21 @@ public class MainActivity extends AppCompatActivity {
 
                 }
         );
+              /*
+        Button nextButton = findViewById(R.id.nextButton);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),selectUniform.class);
+                startActivityForResult(intent, REQUEST_CODE_NEXT);
+            }
+                                  }
+        );
+        */
 
         //지도 페이지
-        textView = findViewById(R.id.textView);
 
+        textView = findViewById(R.id.textView);
         button = findViewById(R.id.button);
 
     }
