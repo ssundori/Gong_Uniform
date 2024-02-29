@@ -16,6 +16,7 @@
         android:textSize="20dp" />
 
     <Button
+        android:id="@+id/player_button"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:layout_gravity="center"

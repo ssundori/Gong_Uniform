@@ -20,8 +20,8 @@ public class activity_select_player extends AppCompatActivity {
 
         container = findViewById(R.id.container);
 
-        Button button = findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+        Button player_button = findViewById(R.id.player_button);
+        player_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 LayoutInflater inflater = (LayoutInflater)

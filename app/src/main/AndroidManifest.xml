@@ -18,25 +18,24 @@
 
         <activity
             android:name=".selectUniform"
-            android:exported="true"
+            android:exported="false"
             android:label="유니폼선택" />
 
-        <activity android:name=".activity_select_player">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+
 
         <activity
-            android:name=".MainActivity"
+            android:name=".activity_select_player"
+            android:exported="false"/>
+
+        <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>
