@@ -42,5 +42,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:menu="@menu/menu_bottom" />
 
-
 </androidx.constraintlayout.widget.ConstraintLayout> <!--화면 하단에 보여질 수 있도록-->

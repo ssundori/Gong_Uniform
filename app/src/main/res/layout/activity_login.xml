@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    >
+
+    <!-- LOGIN 글씨 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textSize="23sp"
+        android:textColor="#6750a4"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+
+    <!-- logo 이미지 삽입 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        >
+    </ImageView>
+
+    <!-- Email 입력란 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:hint="Email"
+        >
+
+    </EditText>
+
+    <!-- Password 입력란 -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:hint="Password"
+        >
+
+    </EditText>
+
+    <!-- Log in 버튼 -->
+    <android.widget.Button
+        android:id="@+id/LoginBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Log in"
+        android:background="@drawable/bin_btn_login"
+        android:layout_marginBottom="5px"
+        >
+
+    </android.widget.Button>
+
+    <!-- OR -->
+    <!-- res\drawable\bin_btn_login.xml 로 버튼 가장자리 둥글게 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="OR"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        >
+
+    </TextView>
+
+    <!-- 페이스북 로그인 버튼 -->
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Log in with Facebook"
+        android:background="@drawable/bin_btn_login"
+        android:backgroundTint="#5890FF"
+        android:layout_marginBottom="10px">
+
+    </android.widget.Button>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/text_view_find_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:text="Find Password"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_blue_dark">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_view_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="5"
+            android:text="Sign Up"
+            android:textSize="15sp"
+            android:textColor="@android:color/holo_blue_dark">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
