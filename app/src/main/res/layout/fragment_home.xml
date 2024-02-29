@@ -9,14 +9,14 @@
     <!-- 공유니폼 글씨 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:orientation="horizontal">
 
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:layout_weight="1"
+            android:layout_weight="1.1"
             android:text="공유니폼"
             android:textSize="25dp"
             android:textColor="#6750a4"
@@ -28,12 +28,12 @@
         <ImageView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_weight="0.9"
             android:background="@null"
             android:src="@drawable/rent"
-            android:paddingRight="55dp"
-            android:paddingTop="5dp"
-            android:paddingBottom="2dp"/>
+            android:paddingRight="45dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="1dp"/>
 
         <View
             android:layout_width="0dp"
