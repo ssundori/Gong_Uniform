@@ -1,5 +1,12 @@
 package com.example.gongu;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
+
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -8,13 +15,13 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView textView;
     Button button;
+
     Fragment_rent fragmentRent;
     Fragment_map fragmentMap;
     Fragment_home fragmentHome;
@@ -26,23 +33,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         fragmentRent = new Fragment_rent();
         fragmentMap = new Fragment_map();
         fragmentHome = new Fragment_home();
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
 
-
-
-
-
         //네비게이션 바
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentRent).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
 
         BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
-        bottomNavigation.setOnNavigationItemSelectedListener(
-                new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigation.setSelectedItemId(R.id.tab3);
+        bottomNavigation.setOnItemSelectedListener(
+                new BottomNavigationView.OnItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         if (item.getItemId() == R.id.tab1) {
@@ -72,20 +75,11 @@ public class MainActivity extends AppCompatActivity {
                 }
         );
 
-
-
-
         //지도 페이지
         textView = findViewById(R.id.textView);
 
         button = findViewById(R.id.button);
 
-
-
-
-
     }
-
-
 
 }

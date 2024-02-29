@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -22,6 +21,9 @@
             android:value="AIzaSyA3E5jfWp5uS30Oqg1mZ5GmBiX13bDvp1g"/>
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,4 +34,3 @@
     </application>
 
 </manifest>
-
