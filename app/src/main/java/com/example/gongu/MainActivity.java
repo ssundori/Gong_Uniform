@@ -7,9 +7,20 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+
+    TextView textView;
+    Button button;
 
     Fragment_rent fragmentRent;
     Fragment_map fragmentMap;
@@ -28,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
 
+        //네비게이션 바
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
 
         BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
@@ -62,6 +74,12 @@ public class MainActivity extends AppCompatActivity {
 
                 }
         );
-    }
+
+        //지도 페이지
+        textView = findViewById(R.id.textView);
+
+        button = findViewById(R.id.button);
 
     }
+
+}
