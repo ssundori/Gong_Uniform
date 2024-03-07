@@ -35,6 +35,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".select_team"
+            android:exported="false" />
+
         <activity
             android:name=".login"
             android:exported="true">
