@@ -27,7 +27,7 @@ public class login extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), select_team.class);
                 startActivity(intent);
             }
         });
