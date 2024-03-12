@@ -4,94 +4,97 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".selectUniform">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="유니폼선택"
-            android:textSize="25dp"
-            tools:layout_editor_absoluteX="147dp"
-            tools:layout_editor_absoluteY="52dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="유니폼선택"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        />
 
-        <Button
-            android:id="@+id/nextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="다음"
-            tools:layout_editor_absoluteX="307dp"
-            tools:layout_editor_absoluteY="577dp" />
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:padding="15dp">
 
         <RelativeLayout
             android:layout_width="120dp"
             android:layout_height="150dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            tools:context="com.recipes4dev.examples.imagebuttonexample1.MainActivity"
-            tools:layout_editor_absoluteX="55dp"
-            tools:layout_editor_absoluteY="119dp"
-            tools:showIn="@layout/activity_main">
+            android:layout_gravity="center"
+            app:layout_columnWeight="1">
 
             <ImageButton
                 android:id="@+id/imageButton1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="0dp"
-                android:src="@drawable/rent" />
+                android:src="@drawable/player1" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="120dp"
             android:layout_height="150dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            tools:context="com.recipes4dev.examples.imagebuttonexample1.MainActivity"
-            tools:layout_editor_absoluteX="240dp"
-            tools:layout_editor_absoluteY="119dp"
-            tools:showIn="@layout/activity_main">
+            android:layout_gravity="center"
+            app:layout_columnWeight="1">
 
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="2dp"
-                android:src="@drawable/rent" />
+                android:src="@drawable/player1" />
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="120dp"
             android:layout_height="150dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            tools:context="com.recipes4dev.examples.imagebuttonexample1.MainActivity"
-            tools:layout_editor_absoluteX="55dp"
-            tools:layout_editor_absoluteY="350dp"
-            tools:showIn="@layout/activity_main">
-
+            android:layout_gravity="center"
+            app:layout_columnWeight="1">
 
             <ImageButton
                 android:id="@+id/imageButton3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="2dp"
-                android:src="@drawable/rent" />
+                android:src="@drawable/player1" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="120dp"
             android:layout_height="150dp"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior"
-            tools:context="com.recipes4dev.examples.imagebuttonexample1.MainActivity"
-            tools:layout_editor_absoluteX="240dp"
-            tools:layout_editor_absoluteY="350dp"
-            tools:showIn="@layout/activity_main">
-
+            android:layout_gravity="center"
+            app:layout_columnWeight="1">
 
             <ImageButton
                 android:id="@+id/imageButton4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="2dp"
-                android:src="@drawable/rent" />
+                android:src="@drawable/player1" />
 
         </RelativeLayout>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="다음"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"/>
+
 </LinearLayout>
