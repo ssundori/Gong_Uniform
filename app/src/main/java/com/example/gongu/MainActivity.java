@@ -46,8 +46,6 @@ public class MainActivity extends AppCompatActivity {
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
 
-
-
         //네비게이션 바
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
 
@@ -83,7 +81,8 @@ public class MainActivity extends AppCompatActivity {
 
                 }
         );
-              /*
+
+        /*
         Button nextButton = findViewById(R.id.nextButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -92,8 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(intent, REQUEST_CODE_NEXT);
             }
                                   }
-        );
-        */
+        );*/
 
         //지도 페이지
 
