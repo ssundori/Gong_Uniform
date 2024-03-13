@@ -16,22 +16,10 @@
         android:theme="@style/Theme.GongU"
         tools:targetApi="31">
 
-
-        <activity
-            android:name=".selectUniform"
-            android:exported="false"
-            android:label="유니폼선택" />
-
-
-
-        <activity
-            android:name=".activity_select_player"
-            android:exported="false"/>
-
-       
         <meta-data
-            android:name = "com.google.android.geo.API_KEY"
-            android:value="AIzaSyA3E5jfWp5uS30Oqg1mZ5GmBiX13bDvp1g"/>
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA3E5jfWp5uS30Oqg1mZ5GmBiX13bDvp1g" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -45,12 +33,10 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-
     </application>
 
 </manifest>
