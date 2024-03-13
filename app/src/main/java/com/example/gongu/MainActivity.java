@@ -1,18 +1,5 @@
 package com.example.gongu;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
-import android.content.Intent;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationManager;
-
-import android.os.Bundle;
-import android.view.MenuItem;
-import android.widget.Toast;
-
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Button;
@@ -21,6 +8,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -45,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentHome = new Fragment_home();
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
+
 
         //네비게이션 바
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
