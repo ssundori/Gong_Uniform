@@ -5,24 +5,120 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
     tools:context=".Fragment_rent_uniform">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#ced4da">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="선수선택"
+            android:textSize="20sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="유니폼"
+            android:textSize="20sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="사이즈"
+            android:textSize="20sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="결제"
+            android:textSize="20sp">
+
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:background="#ced4da"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="김재환"
+            android:textSize="20sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="미선택"
+            android:textSize="18sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp">
+
+        </TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="18sp">
+
+        </TextView>
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="유니폼 종류 선택"
+        android:layout_marginTop="30dp"
         android:textSize="25dp"
+        android:textStyle="bold"
         android:textAlignment="center"
         />
 
     <GridLayout
         android:layout_width="400dp"
-        android:layout_height="500dp"
+        android:layout_height="400dp"
         android:columnCount="2"
         android:rowCount="2"
+        android:layout_gravity="center"
         android:alignmentMode="alignMargins"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
         android:padding="40dp">
@@ -48,7 +144,7 @@
         <RelativeLayout
             android:layout_width="120dp"
             android:layout_height="150dp"
-            android:layout_gravity="right"
+            android:layout_gravity="center"
             android:layout_columnWeight="1">
 
             <ImageButton
@@ -84,7 +180,7 @@
         <RelativeLayout
             android:layout_width="120dp"
             android:layout_height="150dp"
-            android:layout_gravity="center|right"
+            android:layout_gravity="center"
             android:layout_columnWeight="1">
 
             <ImageButton
