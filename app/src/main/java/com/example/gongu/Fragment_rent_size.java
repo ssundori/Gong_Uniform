@@ -88,7 +88,7 @@ public class Fragment_rent_size extends Fragment {
             }
             qrView.setImageBitmap(bitmap); // QR 코드 이미지를 ImageView에 설정하여 화면에 표시
             } catch (WriterException e) {
-            e.printStackTrace();
+            System.out.println("QR코드 생성 오류");
         }
 
     }
@@ -102,6 +102,7 @@ public class Fragment_rent_size extends Fragment {
             generateQRCode(qrImageView);
         }
     });*/
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
