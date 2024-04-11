@@ -136,7 +136,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:background="@drawable/round_border"
-                    android:src="@drawable/uniform"
+                    android:src="@drawable/uniformA"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"/>
 
@@ -166,7 +166,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:background="@drawable/round_border"
-                    android:src="@drawable/uniform"
+                    android:src="@drawable/uniformA"
                     android:layout_gravity="center"
                     android:layout_margin="5dp"/>
             </LinearLayout>

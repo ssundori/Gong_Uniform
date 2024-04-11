@@ -66,7 +66,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
             android:background="#ffffff"
-            android:src="@drawable/uniform"
+            android:src="@drawable/uniformAWAY"
             android:layout_gravity="center"/>
 
         <LinearLayout
@@ -116,7 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:text="주문 정보 : \n김재환, 서울원정, M size"
+                android:text="주문 정보 : \n양석환, 서울원정, M size"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp"
                 >
@@ -154,7 +154,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
             android:background="#ffffff"
-            android:src="@drawable/uniform"
+            android:src="@drawable/uniformM"
             android:layout_gravity="center"/>
 
         <LinearLayout
@@ -204,7 +204,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:text="주문 정보 : \n김재환, 서울원정, M size"
+                android:text="주문 정보 : \n김재환, 밀리터리, L size"
                 android:textSize="18sp"
                 android:layout_marginBottom="8dp"
                 >
@@ -216,7 +216,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:text="대여 시작 시각 : \n2024년 2월 21일 16시 32분"
+                android:text="대여 시작 시각 : \n2024년 4월 11일 21시 49분"
                 android:textSize="18sp"
                 >
 
