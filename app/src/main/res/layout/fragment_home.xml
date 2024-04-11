@@ -86,7 +86,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/양의지"
+                android:src="@drawable/yanguji"
                 android:layout_gravity="center"
                 android:layout_marginLeft="8dp"/>
 
@@ -95,7 +95,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/곽빈"
+                android:src="@drawable/gackbin"
                 android:layout_gravity="center"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"/>
@@ -105,7 +105,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/김재환"
+                android:src="@drawable/kimjaehwan"
                 android:layout_gravity="center"
                 android:layout_marginRight="8dp"/>
 
@@ -144,7 +144,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/김택연"
+                android:src="@drawable/kimtaekyeon"
                 android:layout_gravity="center"
                 android:layout_marginLeft="8dp"/>
 
@@ -153,7 +153,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/박치국"
+                android:src="@drawable/parkchikook"
                 android:layout_gravity="center"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"/>
@@ -163,7 +163,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/이유찬"
+                android:src="@drawable/leeyoochan"
                 android:layout_gravity="center"
                 android:layout_marginRight="8dp"/>
 
@@ -202,7 +202,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/정수빈"
+                android:src="@drawable/jungsubin"
                 android:layout_gravity="center"
                 android:layout_marginLeft="8dp"/>
 
@@ -211,7 +211,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/최승용"
+                android:src="@drawable/chaesungyong"
                 android:layout_gravity="center"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"/>
@@ -221,7 +221,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/홍건희"
+                android:src="@drawable/honggunhee"
                 android:layout_gravity="center"
                 android:layout_marginRight="8dp"/>
 
@@ -260,7 +260,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/김재환"
+                android:src="@drawable/kimjaehwan"
                 android:layout_gravity="center"
                 android:layout_marginLeft="8dp"/>
 
@@ -269,7 +269,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/정수빈"
+                android:src="@drawable/jungsubin"
                 android:layout_gravity="center"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"/>
@@ -279,7 +279,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/양의지"
+                android:src="@drawable/yanguji"
                 android:layout_gravity="center"
                 android:layout_marginRight="8dp"/>
 

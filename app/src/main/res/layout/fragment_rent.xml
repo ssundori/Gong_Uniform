@@ -131,7 +131,7 @@
                 android:layout_height="110dp"
                 android:gravity="center"
                 android:background="#FFFFFF"
-                android:src="@drawable/김재환"
+                android:src="@drawable/kimjaehwan"
                 />
 
             <ImageView
@@ -142,7 +142,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:background="#FFFFFF"
-                android:src="@drawable/정수빈"/>
+                android:src="@drawable/jungsubin"/>
 
             <ImageView
                 android:id="@+id/suggestPlayerView3"
@@ -150,7 +150,7 @@
                 android:layout_height="110dp"
                 android:gravity="center"
                 android:background="#FFFFFF"
-                android:src="@drawable/이유찬"/>
+                android:src="@drawable/leeyoochan"/>
 
         </LinearLayout>
         <View
@@ -193,7 +193,7 @@
                         android:layout_marginLeft="25dp"
                         android:gravity="center"
                         android:background="#FFFFFF"
-                        android:src="@drawable/곽빈" />
+                        android:src="@drawable/gackbin" />
 
                     <ImageView
                         android:id="@+id/selectPlayerView2"
@@ -201,7 +201,7 @@
                         android:layout_height="110dp"
                         android:layout_marginLeft="30dp"
                         android:background="#FFFFFF"
-                        android:src="@drawable/김재환" />
+                        android:src="@drawable/kimjaehwan" />
 
                     <ImageView
                         android:id="@+id/selectPlayerView3"
@@ -210,7 +210,7 @@
                         android:layout_marginLeft="30dp"
                         android:gravity="center"
                         android:background="#FFFFFF"
-                        android:src="@drawable/김택연" />
+                        android:src="@drawable/kimtaekyeon" />
 
                     <ImageView
                         android:id="@+id/selectPlayerView4"
@@ -219,7 +219,7 @@
                         android:layout_marginLeft="30dp"
                         android:gravity="center"
                         android:background="#FFFFFF"
-                        android:src="@drawable/박치국" />
+                        android:src="@drawable/parkchikook" />
 
                     <!-- Add more ImageView elements for additional players -->
                 </LinearLayout>
