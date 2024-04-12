@@ -264,10 +264,10 @@
 
                 </TextView>
                 <Button
-                    android:id="@+id/button_temp_qr"
+                    android:id="@+id/button_temp_pay"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="임시_QR생성"
+                    android:text="임시_결제하기"
                     android:layout_gravity="end|bottom"
                     android:layout_marginBottom="20dp"
                     android:layout_marginEnd="20dp"/>

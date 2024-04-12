@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/text_pay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="결제가 완료되었습니다!" />
+
+    <Button
+        android:id="@+id/button_temp_qr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QR코드 보기" />
+
+    <Button
+        android:id="@+id/button_temp_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="공유니폼 자판기 위치 보러가기" />
+
+    <ImageView
+        android:id="@+id/imageview_QR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,20 +1,13 @@
 package com.example.gongu;
 
-import android.graphics.Bitmap;
-import android.graphics.Color;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
-
-import com.google.zxing.BarcodeFormat;
-import com.google.zxing.WriterException;
-import com.google.zxing.common.BitMatrix;
-import com.google.zxing.qrcode.QRCodeWriter;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -22,8 +15,6 @@ import com.google.zxing.qrcode.QRCodeWriter;
  * create an instance of this fragment.
  */
 public class Fragment_rent_size extends Fragment {
-    //private SharedViewModel QRViewModel;
-
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -32,6 +23,8 @@ public class Fragment_rent_size extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private View view;
+    private Button ButtontoPay;
 
     public Fragment_rent_size() {
         // Required empty public constructor
@@ -62,51 +55,22 @@ public class Fragment_rent_size extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        //QRViewModel = new ViewModelProvider(requireActivity()).get(SharedViewModel.class);
-    }
-
-    public void generateQRCode(ImageView qrView) {
-        QRCodeWriter qrCode = new QRCodeWriter();
-        try {
-            // QR코드 생성 및 BitMatrix로 변환
-            BitMatrix bitMtx = qrCode.encode(
-                    getActivity().getIntent().getStringExtra("id"),
-                    BarcodeFormat.QR_CODE, 350, 350
-            );
-            //BitMatrix를 Bitmap으로 변환하여 QR코드 이미지 생성
-            Bitmap bitmap = Bitmap.createBitmap(bitMtx.getWidth(),bitMtx.getHeight(), Bitmap.Config.RGB_565);
-            for (int i=0; i<bitMtx.getWidth(); i++) {
-                for (int j=0; j<bitMtx.getHeight(); j++) {
-                    int color;
-                    if (bitMtx.get(i,j)) {
-                        color = Color.BLACK;
-                    } else {
-                        color = Color.WHITE;
-                    }
-                    bitmap.setPixel(i,j,color);
-                }
-            }
-            qrView.setImageBitmap(bitmap); // QR 코드 이미지를 ImageView에 설정하여 화면에 표시
-            } catch (WriterException e) {
-            System.out.println("QR코드 생성 오류");
-        }
 
     }
-    Button generateQRButton = getView().findViewById(R.id.button_temp_qr);
-    ImageView qrImageView = getView().findViewById(R.id.QRImageView);
-
-    //임시 qr 생성 버튼 클릭시 QR 생성
-    /*generateQRButton.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            generateQRCode(qrImageView);
-        }
-    });*/
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.fragment_rent_size,container,false);
+        ButtontoPay = (Button) view.findViewById(R.id.button_temp_pay);
+        ButtontoPay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), pay.class);
+                //intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_rent_size, container, false);
     }
