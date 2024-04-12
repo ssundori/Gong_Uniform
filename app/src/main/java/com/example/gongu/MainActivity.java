@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
     Fragment_QR fragmentQR;
     Fragment_mypage fragmentMyPage;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

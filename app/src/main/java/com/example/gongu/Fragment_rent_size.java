@@ -61,7 +61,9 @@ public class Fragment_rent_size extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.fragment_rent_size,container,false);
+        // Inflate the layout for this fragment
+        View view = inflater.inflate(R.layout.fragment_rent_size, container, false);
+
         ButtontoPay = (Button) view.findViewById(R.id.button_temp_pay);
         ButtontoPay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +73,8 @@ public class Fragment_rent_size extends Fragment {
                 startActivity(intent);
             }
         });
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rent_size, container, false);
+
+        return view;
     }
+
 }
