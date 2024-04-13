@@ -237,6 +237,7 @@
                 android:layout_height="200dp"
                 android:orientation="vertical"
                 android:background="#ced4da">
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -262,6 +263,19 @@
                     android:textSize="18sp">
 
                 </TextView>
+                <Button
+                    android:id="@+id/button_temp_pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="임시_결제하기"
+                    android:layout_gravity="end|bottom"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="20dp"/>
+
+                <ImageView
+                    android:id="@+id/QRImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
