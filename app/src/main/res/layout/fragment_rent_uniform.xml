@@ -124,7 +124,7 @@
         android:padding="40dp">
 
         <RelativeLayout
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_columnWeight="1">
@@ -134,15 +134,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:scaleType="fitCenter"
                 android:layout_marginRight="0dp"
                 android:layout_marginBottom="0dp"
                 android:padding="2dp"
-                android:src="@drawable/player" />
+                android:src="@drawable/uniforma" />
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_columnWeight="1">
@@ -151,7 +152,8 @@
                 android:id="@+id/imageButton2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/player"
+                android:scaleType="fitCenter"
+                android:src="@drawable/uniformaway"
                 android:layout_marginRight="0dp"
                 android:layout_marginBottom="0dp"
                 android:padding="2dp"
@@ -160,7 +162,7 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_columnWeight="1">
@@ -171,14 +173,15 @@
                 android:layout_height="match_parent"
                 android:layout_marginRight="0dp"
                 android:layout_marginBottom="0dp"
+                android:scaleType="fitCenter"
                 android:padding="2dp"
                 android:layout_gravity="center"
-                android:src="@drawable/player"/>
+                android:src="@drawable/uniformm"/>
 
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_columnWeight="1">
@@ -188,10 +191,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
+                android:scaleType="fitCenter"
                 android:layout_marginRight="0dp"
                 android:layout_marginBottom="0dp"
                 android:padding="2dp"
-                android:src="@drawable/player"
+                android:src="@drawable/uniformo"
                 />
 
         </RelativeLayout>

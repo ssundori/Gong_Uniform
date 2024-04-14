@@ -1,11 +1,17 @@
 package com.example.gongu;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.MultiFormatWriter;
@@ -13,8 +19,7 @@ import com.google.zxing.common.BitMatrix;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
 
 public class pay extends AppCompatActivity {
-    private Button createQRBtn;
-    private Button toMapFragment;
+    private Button ButtonToQR;
     private Button ButtonToMap;
     private Button ButtonToMypage;
     private ImageView imageview_QR;
@@ -24,18 +29,41 @@ public class pay extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pay);
 
-        createQRBtn = (Button) findViewById(R.id.button_temp_qr);
-        toMapFragment = (Button) findViewById(R.id.button_temp_map);
+        ButtonToQR = (Button) findViewById(R.id.button_temp_qr);
         ButtonToMap = (Button) findViewById(R.id.button_temp_map);
         ButtonToMypage = (Button) findViewById(R.id.button_temp_mypage);
 
-        //페이지 넘기기
-        /*createQRBtn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent intent = new Intent(pay.this, CreateQR.class);
+        // MainActivity의 Fragment_qr로 이동
+        ButtonToQR.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("fragment", "qr");
                 startActivity(intent);
             }
-        });*/
+        });
+
+        // MainActivity의 Fragment_map로 이동
+        ButtonToMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("fragment", "map");
+                startActivity(intent);
+            }
+        });
+
+        // MainActivity의 Fragment_mypage로 이동
+        ButtonToMypage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                intent.putExtra("fragment", "mypage");
+                startActivity(intent);
+            }
+        });
+
 
         imageview_QR = (ImageView)findViewById(R.id.imageview_QR);
         text = "QR코드 발급 완료";
@@ -47,22 +75,6 @@ public class pay extends AppCompatActivity {
             Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
             imageview_QR.setImageBitmap(bitmap);
         } catch(Exception e) {}
-
-        /*ButtonToMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Fragment_map.class);
-                startActivity(intent);
-            }
-        });*/
-
-        /*ButtonToMypage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Fragment_mypage.class);
-                startActivity(intent);
-            }
-        });*/
 
     }
 

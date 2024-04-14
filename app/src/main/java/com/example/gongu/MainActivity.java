@@ -36,12 +36,28 @@ public class MainActivity extends AppCompatActivity {
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
 
-
-        //네비게이션 바
-        getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
-
         BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
-        bottomNavigation.setSelectedItemId(R.id.tab3);
+
+        // 특정 Frangment 화면으로 이동하고 싶을 때
+        String fragmentToLoad = getIntent().getStringExtra("fragment");
+        if(fragmentToLoad != null && fragmentToLoad.equals("rent")){ // 대여 화면으로 가고 싶을 경우
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentRent).commit();
+            bottomNavigation.setSelectedItemId(R.id.tab1);
+        }else if (fragmentToLoad != null && fragmentToLoad.equals("map")) { // 지도 화면으로 가고 싶을 경우
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentMap).commit();
+            bottomNavigation.setSelectedItemId(R.id.tab2);
+        }else if (fragmentToLoad != null && fragmentToLoad.equals("qr")) { // QR 화면으로 가고 싶을 경우
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentQR).commit();
+            bottomNavigation.setSelectedItemId(R.id.tab4);
+        }else if (fragmentToLoad != null && fragmentToLoad.equals("mypage")) { // 마이페이지 화면으로 가고 싶을 경우
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentMyPage).commit();
+            bottomNavigation.setSelectedItemId(R.id.tab5);
+        }else{
+            // 홈화면으로 초기 설정
+            getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
+            bottomNavigation.setSelectedItemId(R.id.tab3);
+        }
+
         bottomNavigation.setOnItemSelectedListener(
                 new BottomNavigationView.OnItemSelectedListener() {
                     @Override
@@ -72,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
         );
+
 
         /*
         Button nextButton = findViewById(R.id.nextButton);
