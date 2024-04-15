@@ -6,6 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
@@ -25,6 +27,9 @@ public class Fragment_rent_size extends Fragment {
     private String mParam2;
     private View view;
     private Button ButtontoPay;
+    private ImageButton Button_sizeM;
+    private ImageButton Button_sizeL;
+    private TextView txt_selectedSize;
 
     public Fragment_rent_size() {
         // Required empty public constructor
@@ -65,6 +70,22 @@ public class Fragment_rent_size extends Fragment {
         View view = inflater.inflate(R.layout.fragment_rent_size, container, false);
 
         ButtontoPay = (Button) view.findViewById(R.id.button_temp_pay);
+        txt_selectedSize = view.findViewById(R.id.txt_selectedSize);
+        Button_sizeM = view.findViewById(R.id.Button_sizeM);
+        Button_sizeL = view.findViewById(R.id.Button_sizeL);
+
+        Button_sizeM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txt_selectedSize.setText("M");
+            }
+        });
+        Button_sizeL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                txt_selectedSize.setText("L");
+            }
+        });
         ButtontoPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,5 +97,6 @@ public class Fragment_rent_size extends Fragment {
 
         return view;
     }
+
 
 }

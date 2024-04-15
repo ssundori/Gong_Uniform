@@ -72,6 +72,7 @@
 
         </TextView>
         <TextView
+            android:id="@+id/txt_selectedUniform"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"
@@ -130,7 +131,7 @@
             android:layout_columnWeight="1">
 
             <ImageButton
-                android:id="@+id/imageButton1"
+                android:id="@+id/Button_uniformHome"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -149,7 +150,7 @@
             android:layout_columnWeight="1">
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/Button_uniformAway"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="fitCenter"
@@ -168,7 +169,7 @@
             android:layout_columnWeight="1">
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/Button_uniformMilitary"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginRight="0dp"
@@ -187,7 +188,7 @@
             android:layout_columnWeight="1">
 
             <ImageButton
-                android:id="@+id/imageButton4"
+                android:id="@+id/Button_uniformOldhome"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
