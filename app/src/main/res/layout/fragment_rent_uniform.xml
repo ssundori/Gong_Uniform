@@ -63,6 +63,7 @@
         android:background="#ced4da"
         android:layout_marginTop="10dp">
         <TextView
+            android:id="@+id/txt_selectedPlayerRU"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content"

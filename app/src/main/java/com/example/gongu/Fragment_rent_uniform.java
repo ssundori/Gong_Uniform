@@ -19,6 +19,7 @@ public class Fragment_rent_uniform extends Fragment {
     private ImageButton Button_uniformMilitary;
     private ImageButton Button_uniformOldhome;
     private TextView txt_selectedUniform;
+    private TextView txt_selectedPlayerRU;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,6 +30,13 @@ public class Fragment_rent_uniform extends Fragment {
         Button_uniformMilitary = view.findViewById(R.id.Button_uniformMilitary);
         Button_uniformOldhome = view.findViewById(R.id.Button_uniformOldhome);
         txt_selectedUniform = view.findViewById(R.id.txt_selectedUniform);
+        txt_selectedPlayerRU = view.findViewById(R.id.txt_selectedPlayerRU);
+
+        Bundle bundle = getArguments();
+        if (bundle != null) {
+            String selectedPlayer = bundle.getString("selectedPlayer", "");
+            txt_selectedPlayerRU.setText(selectedPlayer);
+        }
 
 
         Button_uniformHome.setOnClickListener(new View.OnClickListener() {
