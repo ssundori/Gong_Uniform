@@ -45,9 +45,18 @@ public class Fragment_rent extends Fragment {
         Button_selectGackbin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txt_selectedPlayer.setText("곽빈");
+                MainActivity activity = (MainActivity) getActivity();
+                if (activity != null) {
+                    Fragment_rent_uniform fragment_rent_uniform = new Fragment_rent_uniform();
+                    FragmentTransaction transaction = activity.getSupportFragmentManager().beginTransaction();
+                    transaction.replace(R.id.fragment_rent_uniform_container, fragment_rent_uniform);
+                    transaction.commit();
+                    fragment_rent_uniform.setText("곽빈");
+                }
             }
         });
+
+
 
         Button_selectKimjaehwan.setOnClickListener(new View.OnClickListener() {
             @Override

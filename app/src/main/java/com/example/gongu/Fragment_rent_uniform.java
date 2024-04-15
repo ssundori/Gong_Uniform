@@ -72,4 +72,8 @@ public class Fragment_rent_uniform extends Fragment {
         });
         return view;
     }
+
+    public void setText(String text) {
+        txt_selectedUniform.setText(text);
+    }
 }

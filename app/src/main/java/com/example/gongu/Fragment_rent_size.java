@@ -30,6 +30,7 @@ public class Fragment_rent_size extends Fragment {
     private ImageButton Button_sizeM;
     private ImageButton Button_sizeL;
     private TextView txt_selectedSize;
+    private TextView txt_selectedPlayer;
 
     public Fragment_rent_size() {
         // Required empty public constructor
@@ -73,6 +74,7 @@ public class Fragment_rent_size extends Fragment {
         txt_selectedSize = view.findViewById(R.id.txt_selectedSize);
         Button_sizeM = view.findViewById(R.id.Button_sizeM);
         Button_sizeL = view.findViewById(R.id.Button_sizeL);
+        txt_selectedPlayer = view.findViewById(R.id.txt_selectedPlayer);
 
         Button_sizeM.setOnClickListener(new View.OnClickListener() {
             @Override
