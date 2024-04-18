@@ -13,16 +13,19 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
     public static final int REQUEST_CODE_NEXT = 101;
-
     TextView textView;
     Button button;
-
     Fragment_rent fragmentRent;
     Fragment_map fragmentMap;
     Fragment_home fragmentHome;
     Fragment_QR fragmentQR;
     Fragment_mypage fragmentMyPage;
 
+    Fragment_rent_uniform fragmentRentUniform;
+    Fragment_rent_size fragmentRentSize;
+
+    //Fragment selected = null;
+    Bundle mBundle; //main bundle
 
 
     @Override
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
         fragmentHome = new Fragment_home();
         fragmentQR = new Fragment_QR();
         fragmentMyPage = new Fragment_mypage();
+
+        fragmentRentSize = new Fragment_rent_size();
+        fragmentRentUniform = new Fragment_rent_uniform();
 
         BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
 
@@ -88,20 +94,6 @@ public class MainActivity extends AppCompatActivity {
 
                 }
         );
-
-
-        /*
-        Button nextButton = findViewById(R.id.nextButton);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),selectUniform.class);
-                startActivityForResult(intent, REQUEST_CODE_NEXT);
-            }
-                                  }
-        );*/
-
-        //지도 페이지
 
         textView = findViewById(R.id.textView);
         button = findViewById(R.id.button);

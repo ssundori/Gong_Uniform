@@ -69,6 +69,7 @@
             android:background="#ced4da"
             android:layout_marginTop="10dp">
             <TextView
+                android:id="@+id/txt_selectedPlayerRR"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -157,7 +158,7 @@
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="#FFFFFF"
@@ -186,38 +187,43 @@
                     android:orientation="horizontal"
                     android:background="#886750a4">
 
-                    <ImageView
-                        android:id="@+id/selectPlayerView1"
+                    <ImageButton
+                        android:id="@+id/Button_selectGackbin"
                         android:layout_width="90dp"
                         android:layout_height="110dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="30dp"
                         android:gravity="center"
+                        android:scaleType="centerCrop"
                         android:background="#FFFFFF"
                         android:src="@drawable/gackbin" />
 
-                    <ImageView
-                        android:id="@+id/selectPlayerView2"
+                    <ImageButton
+                        android:id="@+id/Button_selectKimjaehwan"
                         android:layout_width="90dp"
                         android:layout_height="110dp"
                         android:layout_marginLeft="30dp"
+                        android:gravity="center"
+                        android:scaleType="centerCrop"
                         android:background="#FFFFFF"
                         android:src="@drawable/kimjaehwan" />
 
-                    <ImageView
-                        android:id="@+id/selectPlayerView3"
+                    <ImageButton
+                        android:id="@+id/Button_selectKimtaekyeon"
                         android:layout_width="90dp"
                         android:layout_height="110dp"
                         android:layout_marginLeft="30dp"
                         android:gravity="center"
+                        android:scaleType="centerCrop"
                         android:background="#FFFFFF"
                         android:src="@drawable/kimtaekyeon" />
 
-                    <ImageView
-                        android:id="@+id/selectPlayerView4"
+                    <ImageButton
+                        android:id="@+id/Button_selectParkchikook"
                         android:layout_width="90dp"
                         android:layout_height="110dp"
                         android:layout_marginLeft="30dp"
                         android:gravity="center"
+                        android:scaleType="centerCrop"
                         android:background="#FFFFFF"
                         android:src="@drawable/parkchikook" />
 
@@ -225,24 +231,50 @@
                 </LinearLayout>
             </HorizontalScrollView>
 
+            <!--<FrameLayout
+                android:id="@+id/fragment_rent_uniform_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />-->
+
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
             </RelativeLayout>
 
-            <View
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="30dp" />
-
-            <Button
-                android:id="@+id/rtoru"
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="다음"
-                android:layout_gravity="end|bottom"
-                android:layout_marginBottom="20dp"
-                android:layout_marginEnd="20dp"/>
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_marginBottom="30dp">
+
+                <!--<Button
+                    android:id="@+id/rtohome"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="메인화면으로"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"/>-->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </View>
+
+                <Button
+                    android:id="@+id/rtoru"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="다음"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
