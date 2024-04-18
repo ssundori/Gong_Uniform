@@ -34,7 +34,8 @@
         android:background="#ced4da"
         android:layout_marginTop="30dp">
 
-        <ImageView
+        <ImageButton
+            android:id="@+id/button_qr_QR1"
             android:layout_width="0dp"
             android:layout_height="120dp"
             android:layout_weight="1"
@@ -43,6 +44,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="10dp"
+            android:gravity="center"
+            android:scaleType="centerCrop"
             android:padding="8dp"/>
 
         <LinearLayout
@@ -60,8 +63,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:text="주문 정보 : \n양석환, 서울원정, M size"
-                android:textSize="18sp"
+                android:text="주문 정보 : \n김재환, 밀리터리, M size"
+                android:textSize="15sp"
                 android:layout_marginBottom="8dp"
                 >
 
@@ -72,8 +75,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
-                android:text="대여 시작 시각 : \n2024년 2월 21일 16시 32분"
-                android:textSize="18sp"
+                android:text="대여 시작 시각 : \n2024년 4월 19일 15시 32분"
+                android:textSize="15sp"
                 >
 
             </TextView>
@@ -83,7 +86,7 @@
     </LinearLayout>
 
     <!-- QR 박스2 -->
-    <LinearLayout
+    <!--<LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -111,7 +114,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginEnd="10dp">
 
-            <!-- 주문 정보 글씨 -->
+            &lt;!&ndash; 주문 정보 글씨 &ndash;&gt;
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -123,7 +126,7 @@
 
             </TextView>
 
-            <!-- 대여 시작 시각 글씨 -->
+            &lt;!&ndash; 대여 시작 시각 글씨 &ndash;&gt;
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -136,6 +139,6 @@
 
 
         </LinearLayout>
-    </LinearLayout>
+    </LinearLayout>-->
 
 </LinearLayout>
