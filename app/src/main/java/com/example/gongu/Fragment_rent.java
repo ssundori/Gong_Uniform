@@ -19,7 +19,7 @@ public class Fragment_rent extends Fragment {
     private ImageButton Button_selectKimjaehwan;
     private ImageButton Button_selectKimtaekyeon;
     private ImageButton Button_selectParkchikook;
-    private TextView txt_selectedPlayer;
+    private TextView txt_selectedPlayerRR;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class Fragment_rent extends Fragment {
         Button_selectKimjaehwan = view.findViewById(R.id.Button_selectKimjaehwan);
         Button_selectKimtaekyeon = view.findViewById(R.id.Button_selectKimtaekyeon);
         Button_selectParkchikook = view.findViewById(R.id.Button_selectParkchikook);
-        txt_selectedPlayer = view.findViewById(R.id.txt_selectedPlayer); // txt_selectedPlayer 초기화
+        txt_selectedPlayerRR = view.findViewById(R.id.txt_selectedPlayerRR); // txt_selectedPlayer 초기화
         RtoRUButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,17 +45,7 @@ public class Fragment_rent extends Fragment {
         Button_selectGackbin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txt_selectedPlayer.setText("곽빈");
-
-                //다른 프래그먼트로 정보 넘기기 일단 보류,,,ㅜ
-                /*MainActivity activity = (MainActivity) getActivity();
-                if (activity != null) {
-                    Fragment_rent_uniform fragment_rent_uniform = new Fragment_rent_uniform();
-                    FragmentTransaction transaction = activity.getSupportFragmentManager().beginTransaction();
-                    transaction.replace(R.id.fragment_rent_uniform_container, fragment_rent_uniform);
-                    transaction.commit();
-                    fragment_rent_uniform.setText("곽빈");
-                }
+                txt_selectedPlayerRR.setText("곽빈");
             }
         });
 
@@ -64,21 +54,21 @@ public class Fragment_rent extends Fragment {
         Button_selectKimjaehwan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txt_selectedPlayer.setText("김재환");
+                txt_selectedPlayerRR.setText("김재환");
             }
         });
 
         Button_selectKimtaekyeon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txt_selectedPlayer.setText("김택연");
+                txt_selectedPlayerRR.setText("김택연");
             }
         });
 
         Button_selectParkchikook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                txt_selectedPlayer.setText("박치국");
+                txt_selectedPlayerRR.setText("박치국");
             }
         });
 

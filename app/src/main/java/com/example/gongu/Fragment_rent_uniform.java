@@ -35,11 +35,11 @@ public class Fragment_rent_uniform extends Fragment {
         txt_selectedUniform = view.findViewById(R.id.txt_selectedUniform);
         txt_selectedPlayerRU = view.findViewById(R.id.txt_selectedPlayerRU);
 
-        Bundle bundle = getArguments();
+        /*Bundle bundle = getArguments();
         if (bundle != null) {
             String selectedPlayer = bundle.getString("selectedPlayer", "");
             txt_selectedPlayerRU.setText(selectedPlayer);
-        }
+        }*/
 
 
         Button_uniformHome.setOnClickListener(new View.OnClickListener() {
