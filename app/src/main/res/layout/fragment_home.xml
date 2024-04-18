@@ -202,7 +202,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/jungsubin"
+                android:src="@drawable/uniforma"
                 android:layout_gravity="center"
                 android:layout_marginLeft="8dp"/>
 
@@ -211,7 +211,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/chaesungyong"
+                android:src="@drawable/uniformo"
                 android:layout_gravity="center"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"/>
@@ -221,7 +221,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/honggunhee"
+                android:src="@drawable/uniformaway"
                 android:layout_gravity="center"
                 android:layout_marginRight="8dp"/>
 
@@ -240,9 +240,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:text="2월 인기 종목"
-            android:textSize="23sp"
-            >
+            android:text="3월 인기 유니폼"
+            android:textSize="23sp">
 
         </TextView>
 
@@ -260,7 +259,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/kimjaehwan"
+                android:src="@drawable/uniformaway"
                 android:layout_gravity="center"
                 android:layout_marginLeft="8dp"/>
 
@@ -269,7 +268,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/jungsubin"
+                android:src="@drawable/uniformm"
                 android:layout_gravity="center"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"/>
@@ -279,7 +278,7 @@
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="#ffffff"
-                android:src="@drawable/yanguji"
+                android:src="@drawable/uniforma"
                 android:layout_gravity="center"
                 android:layout_marginRight="8dp"/>
 

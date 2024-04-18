@@ -16,24 +16,6 @@
         android:textSize="34sp"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/button_temp_qr"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="QR코드 보기" />
-
-    <Button
-        android:id="@+id/button_temp_map"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="공유니폼 자판기 위치 보러가기" />
-
-    <Button
-        android:id="@+id/button_temp_mypage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="주문내역 확인하러 가기" />
-
     <TextView
         android:id="@+id/text_temp_info"
         android:layout_width="match_parent"
@@ -43,5 +25,31 @@
     <ImageView
         android:id="@+id/imageview_QR"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="400dp" />
+
+    <Button
+        android:id="@+id/button_temp_qr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="QR코드 보기" />
+
+    <Button
+        android:id="@+id/button_temp_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="공유니폼 자판기 위치 보러가기" />
+
+    <Button
+        android:id="@+id/button_temp_mypage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="주문내역 확인하러 가기" />
+
+
 </LinearLayout>
