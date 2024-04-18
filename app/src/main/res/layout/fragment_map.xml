@@ -390,7 +390,7 @@
 
             </LinearLayout>
 
-            <Button
+            <!--<Button
                 android:id="@+id/locationButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -412,7 +412,7 @@
                 android:id="@+id/addressText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="addressText" />
+                android:text="addressText" />-->
 
         </LinearLayout>
 
