@@ -37,7 +37,7 @@ public class Fragment_map extends Fragment implements OnMapReadyCallback {
     TextView textView;
     Button button;
     View view;
-    //TextView locationText;
+    TextView locationText;
     TextView addressText;
     Button locationButton;
     private GoogleMap mMap;
