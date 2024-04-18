@@ -13,28 +13,13 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 
 public class Fragment_mypage extends Fragment {
+
+    public Fragment_mypage() {
+        // Required empty public constructor
+    }
+
     private View view;
     private ImageButton button_qr_mypage1;
-    TextView txtResult;
-
-    public void mOnPopupClick(View v) {
-        Intent intent = new Intent(getActivity(), qrpopup.class);
-        intent.putExtra("data","Test Popup");
-        startActivityForResult(intent, 1);
-    }
-
-
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(requestCode==1) {
-            if(resultCode==RESULT_OK) {
-
-                String result = data.getStringExtra("result");
-                txtResult.setText(result);
-            }
-        }
-    }
-
 
 
     @Override
@@ -46,13 +31,16 @@ public class Fragment_mypage extends Fragment {
         button_qr_mypage1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // QR 팝업 액티비티 시작
-                Intent intent = new Intent(getActivity(), qrpopup.class);
-                startActivity(intent);
+                showQRpopup();
             }
         });
 
         return view;
+    }
+
+    private void showQRpopup() {
+        qrpopup dialog = new qrpopup(requireContext());
+        dialog.show();
     }
 
 }
