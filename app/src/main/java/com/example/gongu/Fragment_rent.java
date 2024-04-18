@@ -55,8 +55,7 @@ public class Fragment_rent extends Fragment {
                     transaction.replace(R.id.fragment_rent_uniform_container, fragment_rent_uniform);
                     transaction.commit();
                     fragment_rent_uniform.setText("곽빈");
-                }*/
-
+                }
             }
         });
 
