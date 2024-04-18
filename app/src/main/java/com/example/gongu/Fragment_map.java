@@ -46,16 +46,16 @@ public class Fragment_map extends Fragment implements OnMapReadyCallback {
         super.onCreate(savedInstanceState);
 
         view = inflater.inflate(R.layout.fragment_map, container, false);
-        textView = view.findViewById(R.id.locationText);
+        /*textView = view.findViewById(R.id.locationText);
         addressText = view.findViewById(R.id.addressText); // addressText 찾기
-        button = view.findViewById(R.id.locationButton);
+        button = view.findViewById(R.id.locationButton);*/
 
-        button.setOnClickListener(new View.OnClickListener() {
+        /*button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startLocationService();
             }
-        });
+        });*/
 
         new RequestPermissionsUtil(getContext()).requestLocation(); //위치 권한 요청
 
@@ -75,7 +75,7 @@ public class Fragment_map extends Fragment implements OnMapReadyCallback {
         Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show();
     }
 
-    public void startLocationService() {
+    /*public void startLocationService() {
         LocationManager manager= (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
 
         try {
@@ -196,7 +196,7 @@ public class Fragment_map extends Fragment implements OnMapReadyCallback {
                         textView.setText(e.getLocalizedMessage());
                     }
                 });
-    }
+    }*/
 
     //NULL이 아닌 GoogleMap 객체를 파라미터로 제공해줄 수 있을 때 호출
     @Override
