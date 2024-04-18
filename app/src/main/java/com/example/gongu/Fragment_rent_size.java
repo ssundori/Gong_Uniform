@@ -10,6 +10,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -27,6 +28,7 @@ public class Fragment_rent_size extends Fragment {
     private String mParam2;
     private View view;
     private Button ButtontoPay;
+    private Button RStoRU;
     private ImageButton Button_sizeM;
     private ImageButton Button_sizeL;
     private TextView txt_selectedSize;
@@ -70,7 +72,8 @@ public class Fragment_rent_size extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_rent_size, container, false);
 
-        ButtontoPay = (Button) view.findViewById(R.id.button_temp_pay);
+        ButtontoPay = (Button) view.findViewById(R.id.rstopay);
+        RStoRU = (Button) view.findViewById(R.id.rstoru);
         txt_selectedSize = view.findViewById(R.id.txt_selectedSize);
         Button_sizeM = view.findViewById(R.id.Button_sizeM);
         Button_sizeL = view.findViewById(R.id.Button_sizeL);
@@ -94,6 +97,18 @@ public class Fragment_rent_size extends Fragment {
                 Intent intent = new Intent(getActivity(), pay.class);
                 //intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                 startActivity(intent);
+            }
+        });
+
+        RStoRU.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                Fragment_rent_uniform fragmentRentUniform = new Fragment_rent_uniform();
+
+                transaction.replace(R.id.container, fragmentRentUniform);
+
+                transaction.commit();
             }
         });
 
