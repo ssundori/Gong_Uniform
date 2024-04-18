@@ -204,21 +204,36 @@ public class Fragment_map extends Fragment implements OnMapReadyCallback {
         mMap = googleMap;
 
         LatLng SEOUL = new LatLng(37.556, 126.97);
-        LatLng Jamsil1 = new LatLng(37.511881, 127.073653);
+        LatLng GongU1 = new LatLng(37.511881, 127.073653);
+        LatLng GongU2 = new LatLng(37.501881, 127.103333);
+        LatLng GongU3 = new LatLng(37.491881, 127.077777);
 
-        MarkerOptions markerOptions = new MarkerOptions();
-        MarkerOptions markerOptions2 = new MarkerOptions();
+        MarkerOptions markerSeoul = new MarkerOptions();
+        MarkerOptions markerGongU1 = new MarkerOptions();
+        MarkerOptions markerGongU2 = new MarkerOptions();
+        MarkerOptions markerGongU3 = new MarkerOptions();
 
-        markerOptions.position(SEOUL);
-        markerOptions.title("서울");
-        markerOptions.snippet("한국 수도");
+        markerSeoul.position(SEOUL);
+        markerSeoul.title("서울");
+        markerSeoul.snippet("한국 수도");
 
-        markerOptions2.position(Jamsil1);
-        markerOptions2.title("공유니폼 1호점");
-        markerOptions2.snippet("대여, 반납 가능");
+        markerGongU1.position(GongU1);
+        markerGongU1.title("공유니폼 1호점");
+        markerGongU1.snippet("대여, 반납 가능");
 
-        mMap.addMarker(markerOptions);
-        mMap.addMarker(markerOptions2);
+        markerGongU2.position(GongU2);
+        markerGongU2.title("공유니폼 2호점");
+        markerGongU2.snippet("대여, 반납 가능");
+
+        markerGongU3.position(GongU3);
+        markerGongU3.title("공유니폼 3호점");
+        markerGongU3.snippet("대여 가능");
+
+
+        mMap.addMarker(markerSeoul);
+        mMap.addMarker(markerGongU1);
+        mMap.addMarker(markerGongU2);
+        mMap.addMarker(markerGongU3);
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(SEOUL,10));
         //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Jamsil1, 10));
     }
