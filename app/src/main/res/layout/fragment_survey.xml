@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/surveyquestion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".survey">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_surveyTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="공유니폼 설문조사" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txt_question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="1. 야구에 대한 애정도" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RadioButton
+                        android:id="@+id/q1_rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="매우 좋아한다" />
+                    <RadioButton
+                        android:id="@+id/q1_rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="좋아한다" />
+                    <RadioButton
+                        android:id="@+id/q1_rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="보통이다" />
+                    <RadioButton
+                        android:id="@+id/q1_rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="그닥 좋아하지 않는다" />
+                    <RadioButton
+                        android:id="@+id/q1_rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="야구를 잘 모른다" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txt_question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2. 야구를 좋아한 기간" />
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <RadioButton
+                        android:id="@+id/q2_rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="태어났을 때부터" />
+                    <RadioButton
+                        android:id="@+id/q2_rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1년 미만" />
+                    <RadioButton
+                        android:id="@+id/q2_rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1~2년" />
+                    <RadioButton
+                        android:id="@+id/q2_rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3~5년" />
+                    <RadioButton
+                        android:id="@+id/q2_rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6년 이상" />
+                    <RadioButton
+                        android:id="@+id/q2_rb6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="크게 관심이 없다" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txt_question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. 좋아하는 선수의 이름을 적어주세요." />
+
+                <EditText
+                    android:id="@+id/PlayerInsert"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:hint="없을 경우 '없다' 작성">
+                </EditText>
+                <TextView
+                    android:id="@+id/txt_question4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. 중요하게 생각하는 특징 및 요소" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_q4a1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="아니다" />
+                    <TextView
+                        android:id="@+id/txt_q4a2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="보통이다" />
+                    <TextView
+                        android:id="@+id/txt_q4a3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="그렇다" />
+                    <TextView
+                        android:id="@+id/txt_q4a4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="잘 모르겠다" />
+
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/q4_rb1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+                    <RadioButton
+                        android:id="@+id/q4_rb2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="" />
+                    <RadioButton
+                        android:id="@+id/q4_rb3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+                    <RadioButton
+                        android:id="@+id/q4_rb4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

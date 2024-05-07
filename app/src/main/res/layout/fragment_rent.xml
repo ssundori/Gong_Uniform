@@ -227,6 +227,7 @@
                         android:background="#FFFFFF"
                         android:src="@drawable/parkchikook" />
 
+
                     <!-- Add more ImageView elements for additional players -->
                 </LinearLayout>
             </HorizontalScrollView>
