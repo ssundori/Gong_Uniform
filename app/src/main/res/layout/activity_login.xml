@@ -33,28 +33,23 @@
     </ImageView>
 
     <!-- Email 입력란 -->
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/EmailInsert"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="5dp"
-        android:hint="ID"
-        >
-
-    </EditText>
+        android:hint="@string/EmailInsert" />
 
     <!-- Password 입력란 -->
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/PasswordInsert"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="5dp"
-        android:hint="Password"
-        >
-
-    </EditText>
+        android:hint="@string/PasswordInsert" />
 
     <!-- Log in 버튼 -->
+    <!-- res\drawable\bin_btn_login.xml 로 버튼 가장자리 둥글게 -->
     <android.widget.Button
         android:id="@+id/LoginBtn"
         android:layout_width="match_parent"
@@ -67,7 +62,6 @@
     </android.widget.Button>
 
     <!-- OR -->
-    <!-- res\drawable\bin_btn_login.xml 로 버튼 가장자리 둥글게 -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -110,17 +104,18 @@
 
         </TextView>
 
-        <TextView
+        <android.widget.Button
             android:id="@+id/text_view_sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:layout_weight="5"
+            android:background="#FFFFFF"
             android:text="Sign Up"
             android:textSize="15sp"
             android:textColor="@android:color/holo_blue_dark">
 
-        </TextView>
+        </android.widget.Button>
 
     </LinearLayout>
 
