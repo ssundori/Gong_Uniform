@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/white"
     android:padding="16dp"
-    tools:context=".Fragment_rent_uniform">
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,7 +66,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="김재환"
-            android:textSize="20sp">
+            android:textSize="18sp">
 
         </TextView>
         <TextView
@@ -204,11 +201,12 @@
     </GridLayout>
 
     <LinearLayout
+        android:id="@+id/buttonsLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="10dp"
-        android:layout_marginBottom="30dp">
+        android:layout_gravity="bottom">
 
         <Button
             android:id="@+id/rstoru"
@@ -230,6 +228,7 @@
             android:layout_weight="1"
             android:layout_margin="10dp"/>
     </LinearLayout>
+
 
 
 </LinearLayout>
