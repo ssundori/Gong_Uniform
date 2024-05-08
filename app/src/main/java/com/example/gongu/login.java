@@ -9,6 +9,7 @@ import android.text.Spanned;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 // 화면 전환을 위함 import 추가
@@ -27,7 +28,17 @@ public class login extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), select_team.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button signupButton = (Button) findViewById(R.id.text_view_sign_up);
+        signupButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), signup.class);
                 startActivity(intent);
             }
         });

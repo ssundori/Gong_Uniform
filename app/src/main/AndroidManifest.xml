@@ -36,11 +36,9 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyA3E5jfWp5uS30Oqg1mZ5GmBiX13bDvp1g" />
 
+
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".select_team"
             android:exported="false" />
         <activity
             android:name=".login"
@@ -51,6 +49,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".select_team"
+            android:exported="false" />
     </application>
 
 </manifest>

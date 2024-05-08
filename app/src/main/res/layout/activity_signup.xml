@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    >
+
+    <!-- LOGIN 글씨 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SIGN UP"
+        android:textSize="23sp"
+        android:textColor="#6750a4"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+
+    <!-- logo 이미지 삽입 -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:src="@mipmap/logo"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        >
+    </ImageView>
+
+    <!-- Name -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="20sp"
+        android:textColor="#6750a4"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        >
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SignInName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="@string/SignInName" />
+
+    <!-- Email -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="20sp"
+        android:textColor="#6750a4"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        >
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SignInEmail"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="@string/SignInEmail" />
+
+    <!-- SelectedTeam -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SelectedTeam"
+        android:textSize="20sp"
+        android:textColor="#6750a4"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        >
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SignInSelectedTeam"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="@string/SignInSelectedTeam" />
+
+    <!-- Account -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textSize="20sp"
+        android:textColor="#6750a4"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        >
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SignInAccount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="@string/SignInAccount" />
+
+    <!-- Password -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="20sp"
+        android:textColor="#6750a4"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        >
+
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/SignInPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:hint="@string/SignInPassword" />
+
+    <!-- Sign in 버튼 -->
+    <android.widget.Button
+        android:id="@+id/createUserBtn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sign up"
+        android:background="@drawable/bin_btn_login"
+        android:layout_marginTop="60px"
+        >
+
+    </android.widget.Button>
+
+</LinearLayout>
