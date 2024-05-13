@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/surveyquestion"
@@ -6,27 +5,31 @@
     android:layout_height="match_parent"
     tools:context=".survey">
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="15dp">
 
         <TextView
             android:id="@+id/txt_surveyTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="공유니폼 설문조사" />
+            android:text="공유니폼 설문조사"
+            android:textSize="35sp" />
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:id="@+id/layout_question1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
+                <!-- Question 1 -->
                 <TextView
                     android:id="@+id/txt_question1"
                     android:layout_width="match_parent"
@@ -63,11 +66,14 @@
                         android:text="야구를 잘 모른다" />
                 </RadioGroup>
 
+
+                <!-- Question 2 -->
                 <TextView
                     android:id="@+id/txt_question2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="2. 야구를 좋아한 기간" />
+
                 <RadioGroup
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" >
@@ -103,6 +109,7 @@
                         android:text="크게 관심이 없다" />
                 </RadioGroup>
 
+                <!-- Question 3 -->
                 <TextView
                     android:id="@+id/txt_question3"
                     android:layout_width="match_parent"
@@ -114,83 +121,649 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_margin="5dp"
-                    android:hint="없을 경우 '없다' 작성">
-                </EditText>
-                <TextView
-                    android:id="@+id/txt_question4"
+                    android:hint="없을 경우 '없다' 작성" />
+
+                <!-- Question 4 -->
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="4. 중요하게 생각하는 특징 및 요소" />
+                    android:orientation="vertical">
+
+                    <!-- TextView for question 4 -->
+                    <TextView
+                        android:id="@+id/txt_question4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="4. 중요하게 생각하는 특징 및 요소" />
+
+                    <!-- Horizontal LinearLayout to place txt_choice and RadioGroup side by side -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_1"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="홈런, 장타" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_1_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_1_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_1_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_1_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_2"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="안타수" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_2_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_2_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_2_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_2_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_3"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="도루, 발이 빠름" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_3_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_3_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_3_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_3_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_4"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="볼, 스트라이크 판단력" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_4_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_4_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_4_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_4_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_5"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="수비력" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_5_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_5_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_5_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_5_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_6"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="전술적인 이해력, 게임을 이해하는 능력"
+                            android:textSize="12sp" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_6_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_6_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_6_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_6_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_7"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="리더십" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_7_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_7_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_7_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_7_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_8"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="결정적인 순간에 활약하는 능력" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_8_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_8_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_8_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_8_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_9"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="다양한 포지션을 소화하는 능력" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_9_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_9_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_9_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_9_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_10"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="꾸준히 우수한 실력" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_10_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_10_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_10_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_10_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_11"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="실력 외적인 매력" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_11_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_11_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_11_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_11_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <!-- TextView for choice -->
+                        <TextView
+                            android:id="@+id/txt_q4_12"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="잠재력" />
+
+                        <!-- RadioGroup -->
+                        <RadioGroup
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RadioButton
+                                android:id="@+id/q4_12_rb1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="그렇다" />
+                            <RadioButton
+                                android:id="@+id/q4_12_rb2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="보통이다" />
+                            <RadioButton
+                                android:id="@+id/q4_12_rb3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="아니다" />
+                            <RadioButton
+                                android:id="@+id/q4_12_rb4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="잘 모르겠다" />
+                        </RadioGroup>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. 가장 중요하게 생각하는 요소를 최대 3개 선택해주세요.">
+                </TextView>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-                    <TextView
-                        android:id="@+id/txt_q4a1"
+                    <RadioButton
+                        android:id="@+id/q5_rb1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="아니다" />
-                    <TextView
-                        android:id="@+id/txt_q4a2"
+                        android:text="홈런, 장타" />
+                    <RadioButton
+                        android:id="@+id/q5_rb2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="보통이다" />
-                    <TextView
-                        android:id="@+id/txt_q4a3"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="그렇다" />
-                    <TextView
-                        android:id="@+id/txt_q4a4"
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="잘 모르겠다" />
-
+                        android:text="안타수" />
                 </LinearLayout>
 
-
-                <RadioGroup
+                <!-- 두 번째 줄 -->
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="horizontal">
                     <RadioButton
-                        android:id="@+id/q4_rb1"
+                        android:id="@+id/q5_rb3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="" />
+                        android:text="도루, 발이 빠름" />
                     <RadioButton
-                        android:id="@+id/q4_rb2"
+                        android:id="@+id/q5_rb4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="" />
+                        android:text="볼, 스트라이크 판단력" />
+                </LinearLayout>
+
+                <!-- 세 번째 줄 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
                     <RadioButton
-                        android:id="@+id/q4_rb3"
+                        android:id="@+id/q5_rb5"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="" />
+                        android:text="수비력" />
                     <RadioButton
-                        android:id="@+id/q4_rb4"
+                        android:id="@+id/q5_rb6"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="" />
-                </RadioGroup>
+                        android:text="전술적인 이해력, 게임을 이해하는 능력" />
+                </LinearLayout>
+
+                <!-- 네 번째 줄 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/q5_rb7"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="리더십" />
+                    <RadioButton
+                        android:id="@+id/q5_rb8"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="결정적인 순간에 활약하는 능력" />
+                </LinearLayout>
+
+                <!-- 다섯 번째 줄 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/q5_rb9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="다양한 포지션을 소화하는 능력" />
+                    <RadioButton
+                        android:id="@+id/q5_rb10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="꾸준히 우수한 실력" />
+                </LinearLayout>
+
+                <!-- 여섯 번째 줄 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/q5_rb11"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="실력 외적인 매력" />
+                    <RadioButton
+                        android:id="@+id/q5_rb12"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="잠재력" />
+                </LinearLayout>
 
             </LinearLayout>
-
-
         </ScrollView>
     </LinearLayout>
 </FrameLayout>
