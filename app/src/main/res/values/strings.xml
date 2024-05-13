@@ -2,4 +2,15 @@
     <string name="app_name">GongU</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- login -->
+    <string name="EmailInsert">Email</string>
+    <string name="PasswordInsert">Password</string>
+
+    <!-- signin -->
+    <string name="SignInName">홍길동</string>
+    <string name="SignInEmail">hong@ewhain.net</string>
+    <string name="SignInSelectedTeam">DUSAN</string>
+    <string name="SignInAccount">000-000-0000</string>
+    <string name="SignInPassword">qwer1234</string>
+
 </resources>
