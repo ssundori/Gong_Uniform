@@ -6,14 +6,12 @@
     android:gravity="center"
     android:padding="16dp"
     android:orientation="vertical">
-    <!--sd-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFFFFF"
         android:orientation="vertical">
-        <!--sd-->
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,38 +27,30 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="선수선택"
-                android:textSize="20sp">
-
-            </TextView>
+                android:textSize="20sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="유니폼"
-                android:textSize="20sp">
-
-            </TextView>
+                android:textSize="20sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="사이즈"
-                android:textSize="20sp">
-
-            </TextView>
+                android:textSize="20sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="결제"
-                android:textSize="20sp">
-
-            </TextView>
-
+                android:textSize="20sp" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,37 +65,28 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="미선택"
-                android:textSize="18sp">
-
-            </TextView>
+                android:textSize="18sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text=""
-                android:textSize="18sp">
-
-            </TextView>
+                android:textSize="18sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text=""
-                android:textSize="18sp">
-
-            </TextView>
+                android:textSize="18sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text=""
-                android:textSize="18sp">
-
-            </TextView>
-
+                android:textSize="18sp" />
         </LinearLayout>
 
         <TextView
@@ -132,9 +113,7 @@
                 android:layout_height="110dp"
                 android:gravity="center"
                 android:background="#FFFFFF"
-                android:src="@drawable/kimjaehwan"
-                />
-
+                android:src="@drawable/kimjaehwan" />
             <ImageView
                 android:id="@+id/suggestPlayerView2"
                 android:layout_width="90dp"
@@ -143,17 +122,16 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:background="#FFFFFF"
-                android:src="@drawable/jungsubin"/>
-
+                android:src="@drawable/jungsubin" />
             <ImageView
                 android:id="@+id/suggestPlayerView3"
                 android:layout_width="90dp"
                 android:layout_height="110dp"
                 android:gravity="center"
                 android:background="#FFFFFF"
-                android:src="@drawable/leeyoochan"/>
-
+                android:src="@drawable/leeyoochan" />
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="20dp" />
@@ -196,7 +174,6 @@
                         android:scaleType="centerCrop"
                         android:background="#FFFFFF"
                         android:src="@drawable/gackbin" />
-
                     <ImageButton
                         android:id="@+id/Button_selectKimjaehwan"
                         android:layout_width="90dp"
@@ -206,7 +183,6 @@
                         android:scaleType="centerCrop"
                         android:background="#FFFFFF"
                         android:src="@drawable/kimjaehwan" />
-
                     <ImageButton
                         android:id="@+id/Button_selectKimtaekyeon"
                         android:layout_width="90dp"
@@ -216,7 +192,6 @@
                         android:scaleType="centerCrop"
                         android:background="#FFFFFF"
                         android:src="@drawable/kimtaekyeon" />
-
                     <ImageButton
                         android:id="@+id/Button_selectParkchikook"
                         android:layout_width="90dp"
@@ -226,8 +201,6 @@
                         android:scaleType="centerCrop"
                         android:background="#FFFFFF"
                         android:src="@drawable/parkchikook" />
-
-
                     <!-- Add more ImageView elements for additional players -->
                 </LinearLayout>
             </HorizontalScrollView>
@@ -239,44 +212,18 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            </RelativeLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:layout_gravity="bottom">
-
-                <!--<Button
-                    android:id="@+id/rtohome"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="메인화면으로"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_weight="1"
-                    android:layout_margin="10dp"/>-->
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="5dp"
-                    android:layout_weight="1">
-                </View>
+                android:layout_height="match_parent">
 
                 <Button
                     android:id="@+id/rtoru"
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="다음"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_weight="1"
-                    android:layout_margin="10dp"/>
-            </LinearLayout>
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="80dp"
+                    android:layout_marginEnd="10dp" />
+            </RelativeLayout>
         </LinearLayout>
     </LinearLayout>
-
 </LinearLayout>
