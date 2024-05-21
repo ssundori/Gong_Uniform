@@ -16,8 +16,7 @@
         android:textSize="23sp"
         android:textColor="#6750a4"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
-        >
+        android:layout_marginBottom="20dp">
 
     </TextView>
 
@@ -66,24 +65,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="OR"
+        android:text=""
         android:textSize="15sp"
         android:layout_margin="5dp"
         >
 
     </TextView>
-
-    <!-- 페이스북 로그인 버튼 -->
-    <android.widget.Button
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Log in with Facebook"
-        android:background="@drawable/bin_btn_login"
-        android:backgroundTint="#5890FF"
-        android:layout_marginBottom="10px">
-
-    </android.widget.Button>
-
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -114,7 +101,6 @@
             android:text="Sign Up"
             android:textSize="15sp"
             android:textColor="@android:color/holo_blue_dark">
-
         </android.widget.Button>
 
     </LinearLayout>

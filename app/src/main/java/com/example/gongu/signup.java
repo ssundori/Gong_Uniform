@@ -2,13 +2,10 @@ package com.example.gongu;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
-import android.widget.Toast;
 
 import com.example.gongu.model.User;
 import com.example.gongu.retrofit.RetrofitService;
@@ -28,10 +25,6 @@ public class signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
-        initializeComponents();
-    }
-
-    private void initializeComponents() {
         // 입력한 텍스트 가져오기
         TextInputEditText Name = findViewById(R.id.SignUpName);
         TextInputEditText Email = findViewById(R.id.SignUpEmail);
@@ -40,7 +33,7 @@ public class signup extends AppCompatActivity {
         TextInputEditText Account = findViewById(R.id.SignUpAccount);
 
         // Sign up 버튼
-        Button createUserButton = (Button) findViewById(R.id.createUserBtn);
+        Button createUserButton = findViewById(R.id.createUserBtn);
 
         // Retrofit, UserAPI
         RetrofitService retrofit = new RetrofitService();
@@ -77,20 +70,8 @@ public class signup extends AppCompatActivity {
                             Toast.makeText(signup.this, "Save failed", Toast.LENGTH_LONG).show();
                             Logger.getLogger(signup.class.getName()).log(Level.SEVERE, "Error occurred", t);
                         }
-            });
+                    });
 
         });
     }
-
 }
-
-
-
-
-
-//@Override
-//public void onClick(View view) {
-//        Intent intent = new Intent(getApplicationContext(), select_team.class);
-//        startActivity(intent);
-//        }
-//        });
