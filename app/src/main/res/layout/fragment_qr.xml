@@ -6,7 +6,29 @@
     android:background="@color/white"
     android:padding="16dp">
 
-    <!-- QR 글씨 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/logo">
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <!-- QR 글씨
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="35dp"
@@ -24,15 +46,32 @@
             >
 
         </TextView>
-    </LinearLayout>
+    </LinearLayout>-->
+
+    <View
+        android:background="#142D52"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_marginTop="10dp"/>
+
+    <!-- 주문내역 글씨 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="QR CODE"
+        android:textColor="#142D52"
+        android:textSize="23dp"
+        android:layout_marginTop="10dp">
+    </TextView>
 
     <!-- QR 박스1 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#ced4da"
-        android:layout_marginTop="30dp">
+        android:background="#DFE4EB"
+        android:layout_marginTop="10dp">
 
         <ImageButton
             android:id="@+id/button_qr_QR1"
@@ -64,7 +103,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:text="주문 정보 : \n김재환, 밀리터리, M size"
-                android:textSize="15sp"
+                android:textSize="18dp"
                 android:layout_marginBottom="8dp"
                 >
 
@@ -77,7 +116,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:text="대여 시작 시각 : \n2024년 4월 19일 15시 32분"
-                android:textSize="15sp"
+                android:textSize="18dp"
                 >
 
             </TextView>

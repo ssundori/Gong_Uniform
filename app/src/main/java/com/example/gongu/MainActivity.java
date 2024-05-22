@@ -69,23 +69,18 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         if (item.getItemId() == R.id.tab1) {
-                            Toast.makeText(getApplicationContext(), "대여 페이지 선택됨", Toast.LENGTH_LONG).show();
                             getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentRent).commit();
                             return true;
                         } else if (item.getItemId() == R.id.tab2) {
-                            Toast.makeText(getApplicationContext(), "지도 페이지 선택됨", Toast.LENGTH_LONG).show();
                             getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentMap).commit();
                             return true;
                         } else if (item.getItemId() == R.id.tab3) {
-                            Toast.makeText(getApplicationContext(), "홈 페이지 선택됨", Toast.LENGTH_LONG).show();
                             getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentHome).commit();
                             return true;
                         } else if (item.getItemId() == R.id.tab4) {
-                            Toast.makeText(getApplicationContext(), "QR 페이지 선택됨", Toast.LENGTH_LONG).show();
                             getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentQR).commit();
                             return true;
                         } else if (item.getItemId() == R.id.tab5) {
-                            Toast.makeText(getApplicationContext(), "마이 페이지 선택됨", Toast.LENGTH_LONG).show();
                             getSupportFragmentManager().beginTransaction().replace(R.id.container, fragmentMyPage).commit();
                             return true;
                         }

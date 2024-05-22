@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
-    android:orientation="vertical">
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/logo">
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <View
+        android:background="#142D52"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_marginTop="10dp"/>
 
     <FrameLayout
         android:id="@+id/mapContainer"
@@ -39,8 +66,9 @@
                 android:id="@+id/store1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#EECEFF"
-                android:orientation="vertical">
+                android:background="#DFE4EB"
+                android:orientation="vertical"
+                android:padding="8dp">
 
                 <TextView
                     android:id="@+id/storeName1"
@@ -48,7 +76,13 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="공유니폼 1호점"
-                    android:textSize="20sp" />
+                    android:textSize="20dp" />
+
+                <View
+                    android:background="#142D52"
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="10dp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -59,8 +93,9 @@
                         android:id="@+id/storeAddress1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="주소" />
+                        android:layout_weight="6"
+                        android:text="주소"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -71,8 +106,9 @@
                         android:id="@+id/GongUAddress1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="서울특별시 송파구 올림픽로 25" />
+                        android:layout_weight="19"
+                        android:text="서울특별시 송파구 올림픽로 25"
+                        android:textSize="18dp"/>
 
                 </LinearLayout>
 
@@ -85,8 +121,9 @@
                         android:id="@+id/storeHour1"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="영업 시간" />
+                        android:layout_weight="6"
+                        android:text="영업 시간"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -97,8 +134,9 @@
                         android:id="@+id/GongUHour1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="10:00 - 20:00" />
+                        android:layout_weight="19"
+                        android:text="10:00 - 20:00"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -110,8 +148,9 @@
                         android:id="@+id/storeRent1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="대여" />
+                        android:layout_weight="6"
+                        android:text="대여"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -122,8 +161,9 @@
                         android:id="@+id/GongURent1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="O" />
+                        android:layout_weight="19"
+                        android:text="가능"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -135,8 +175,9 @@
                         android:id="@+id/storeReturn1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="반납" />
+                        android:layout_weight="6"
+                        android:text="반납"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -147,8 +188,9 @@
                         android:id="@+id/GongUReturn1"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="O" />
+                        android:layout_weight="19"
+                        android:text="가능"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -157,9 +199,10 @@
                 android:id="@+id/store2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#EECEFF"
+                android:background="#DFE4EB"
                 android:orientation="vertical"
-                android:layout_marginTop="5dp">
+                android:padding="8dp"
+                android:layout_marginTop="15dp">
 
                 <TextView
                     android:id="@+id/storeName2"
@@ -167,7 +210,13 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="공유니폼 2호점"
-                    android:textSize="20sp" />
+                    android:textSize="20dp" />
+
+                <View
+                    android:background="#142D52"
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="10dp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -178,8 +227,9 @@
                         android:id="@+id/storeAddress2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="주소" />
+                        android:layout_weight="3"
+                        android:text="주소"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -190,8 +240,9 @@
                         android:id="@+id/GongUAddress2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="서울특별시 송파구 올림픽로 25" />
+                        android:layout_weight="9"
+                        android:text="서울특별시 송파구 올림픽로 25"
+                        android:textSize="18dp"/>
 
                 </LinearLayout>
 
@@ -203,9 +254,10 @@
                     <TextView
                         android:id="@+id/storeHour2"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="영업 시간" />
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:text="영업 시간"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -216,8 +268,9 @@
                         android:id="@+id/GongUHour2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="10:00 - 20:00" />
+                        android:layout_weight="9"
+                        android:text="10:00 - 20:00"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -229,8 +282,9 @@
                         android:id="@+id/storeRent2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="대여" />
+                        android:layout_weight="3"
+                        android:text="대여"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -241,8 +295,9 @@
                         android:id="@+id/GongURent2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="O" />
+                        android:layout_weight="9"
+                        android:text="불가능"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -254,8 +309,9 @@
                         android:id="@+id/storeReturn2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="반납" />
+                        android:layout_weight="3"
+                        android:text="반납"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -266,8 +322,9 @@
                         android:id="@+id/GongUReturn2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="O" />
+                        android:layout_weight="9"
+                        android:text="가능"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -276,9 +333,10 @@
                 android:id="@+id/store3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#EECEFF"
+                android:background="#DFE4EB"
                 android:orientation="vertical"
-                android:layout_marginTop="5dp">
+                android:padding="8dp"
+                android:layout_marginTop="15dp">
 
                 <TextView
                     android:id="@+id/storeName3"
@@ -286,7 +344,13 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="공유니폼 3호점"
-                    android:textSize="20sp" />
+                    android:textSize="20dp"                    />
+
+                <View
+                    android:background="#142D52"
+                    android:layout_width="match_parent"
+                    android:layout_height="5px"
+                    android:layout_marginTop="10dp"/>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -297,8 +361,9 @@
                         android:id="@+id/storeAddress3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="주소" />
+                        android:layout_weight="3"
+                        android:text="주소"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -309,8 +374,9 @@
                         android:id="@+id/GongUAddress3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="서울특별시 송파구 올림픽로 25" />
+                        android:layout_weight="9"
+                        android:text="서울특별시 송파구 올림픽로 25"
+                        android:textSize="18dp"/>
 
                 </LinearLayout>
 
@@ -323,8 +389,9 @@
                         android:id="@+id/storeHour3"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="영업 시간" />
+                        android:layout_weight="3"
+                        android:text="영업 시간"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -335,8 +402,9 @@
                         android:id="@+id/GongUHour3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="10:00 - 20:00" />
+                        android:layout_weight="9"
+                        android:text="10:00 - 20:00"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -348,8 +416,9 @@
                         android:id="@+id/storeRent3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="대여" />
+                        android:layout_weight="3"
+                        android:text="대여"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -360,8 +429,9 @@
                         android:id="@+id/GongURent3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="O" />
+                        android:layout_weight="9"
+                        android:text="가능"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -373,8 +443,9 @@
                         android:id="@+id/storeReturn3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="반납" />
+                        android:layout_weight="3"
+                        android:text="반납"
+                        android:textSize="18dp"/>
 
                     <View
                         android:layout_width="0dp"
@@ -385,8 +456,9 @@
                         android:id="@+id/GongUReturn3"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="4"
-                        android:text="X" />
+                        android:layout_weight="9"
+                        android:text="가능"
+                        android:textSize="18dp"/>
                 </LinearLayout>
 
             </LinearLayout>
