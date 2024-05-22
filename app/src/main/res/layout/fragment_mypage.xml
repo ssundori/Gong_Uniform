@@ -6,7 +6,29 @@
     android:background="@color/white"
     android:padding="16dp">
 
-    <!-- 마이페이지 글씨 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/logo">
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <!-- 마이페이지 글씨
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
@@ -22,9 +44,9 @@
             android:textColor="#6750a4"
             android:textSize="25dp"
             android:textStyle="bold"></TextView>
-    </LinearLayout>
+    </LinearLayout>-->
 
-    <!-- (이름) 글씨 -->
+    <!-- (이름) 글씨
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,15 +55,23 @@
         android:textSize="30sp"
         android:layout_marginBottom="20dp"
         android:layout_marginTop="20dp">
-    </TextView>
+    </TextView>-->
+
+    <View
+        android:background="#142D52"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_marginTop="10dp"/>
 
     <!-- 주문내역 글씨 -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="left"
-        android:text="주문내역"
-        android:textSize="23sp">
+        android:gravity="center"
+        android:text="김이화님의 주문내역"
+        android:textColor="#142D52"
+        android:textSize="23dp"
+        android:layout_marginTop="10dp">
     </TextView>
 
     <!-- 결제완료 박스1 -->
@@ -49,7 +79,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#ced4da"
+        android:background="#DFE4EB"
         android:layout_marginTop="10dp">
 
         <ImageView
@@ -85,7 +115,8 @@
                     android:gravity="left"
                     android:layout_weight="2"
                     android:text="결제완료"
-                    android:textSize="20sp">
+                    android:textSize="20dp"
+                    android:layout_marginTop="10dp">
                 </TextView>
 
                 <View
@@ -110,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:text="주문 정보 : \n김재환, 밀리터리, M size"
-                android:textSize="13sp">
+                android:textSize="18dp">
             </TextView>
 
             <!-- 대여 시작 시각 글씨 -->
@@ -120,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:text="대여 시작 시각 : \n2024년 4월 19일 15시 32분"
-                android:textSize="13sp">
+                android:textSize="18dp">
             </TextView>
 
 
