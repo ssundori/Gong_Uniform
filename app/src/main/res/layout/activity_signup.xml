@@ -71,25 +71,7 @@
         android:layout_margin="5dp"
         android:hint="@string/SignInEmail" />
 
-    <!-- SelectedTeam -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SelectedTeam"
-        android:textSize="20sp"
-        android:textColor="#142D52"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="5dp"
-        >
 
-    </TextView>
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/SignUpSelectedTeam"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_margin="5dp"
-        android:hint="@string/SignInSelectedTeam" />
 
     <!-- Account -->
     <TextView
@@ -131,12 +113,40 @@
         android:layout_margin="5dp"
         android:hint="@string/SignInPassword" />
 
+    <!-- SelectedTeam -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Team Select and Survey"
+        android:textSize="20sp"
+        android:textColor="#142D52"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        >
+
+    </TextView>
+
+    <android.widget.Button
+        android:id="@+id/SignUpSelectTeamSurvey"
+        android:layout_width="match_parent"
+        android:gravity="left"
+        android:background="#FFFFFF"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:text="Click here"
+        android:textColor="#C4C4C5"
+        android:paddingTop="12dp"
+        android:paddingLeft="2dp"
+        android:textAllCaps="false"/>
+
     <!-- Sign in 버튼 -->
     <android.widget.Button
         android:id="@+id/createUserBtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Sign up"
+        android:textColor="#FFFFFF"
         android:background="@drawable/bin_btn_login"
         android:layout_marginTop="60px"
         >

@@ -58,6 +58,10 @@
         <activity
             android:name=".select_team"
             android:exported="false" />
+
+        <activity
+            android:name=".survey"
+            android:exported="false" />
       
         <activity
               android:name=".qrpopup"

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- 팀 선택 글씨 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="설문조사"
+            android:textSize="25dp"
+            android:textColor="#6750a4"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="원하는 팀을 선택해 주세요."
+            android:textSize="18dp"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="(후에 변경이 가능합니다.)"
+            android:textSize="12dp"
+            android:textColor="#000000"
+            >
+
+        </TextView>
+    </LinearLayout>
+
+    <!-- Sign in 버튼 -->
+    <android.widget.Button
+        android:id="@+id/gobacklogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="SUBMIT"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/bin_btn_login"
+        android:layout_marginTop="60px"
+        >
+
+    </android.widget.Button>
+
+</LinearLayout>
