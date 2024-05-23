@@ -109,8 +109,9 @@
                 <EditText
                     android:id="@+id/PlayerInsert"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
+                    android:layout_height="50dp"
                     android:hint="없을 경우 '없다' 작성"
+                    android:outlineProvider="none"
                     android:textSize="20dp"
                     android:paddingStart="10dp"/>
 
