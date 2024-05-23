@@ -9,31 +9,17 @@
     <!-- 공유니폼 글씨 -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="35dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:layout_weight="1.1"
-            android:text="공유니폼"
-            android:textSize="25dp"
-            android:textColor="#6750a4"
-            android:textStyle="bold"
-            >
-
-        </TextView>
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@null"
-            android:src="@drawable/rent"
-            android:paddingRight="45dp"
-            android:paddingTop="3dp"
-            android:paddingBottom="1dp"/>
+            android:src="@mipmap/logo">
+        </ImageView>
 
         <View
             android:layout_width="0dp"
@@ -43,246 +29,290 @@
         <android.widget.Button
             android:id="@+id/HomeToRentBtn"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="40dp"
             android:layout_weight="1.3"
             android:gravity="center"
-            android:background="@drawable/bin_btn_login"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bin_btn_gorent"
             android:text="대여하러 가기 >"
             android:textColor="#FFFFFF"
-            android:textSize="14dp">
-
+            android:textSize="15dp">
         </android.widget.Button>
     </LinearLayout>
-
-    <!-- 이 달의 추천 선수 -->
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
-        <!-- 글씨 -->
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="이 달의 추천 선수"
-            android:textSize="23sp"
-            >
-
-        </TextView>
-
-        <!-- 박스 -->
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#ced4da"
-            android:layout_marginTop="1dp"
-            android:padding="8dp">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/yanguji"
-                android:layout_gravity="center"
-                android:layout_marginLeft="8dp"/>
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/gackbin"
-                android:layout_gravity="center"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"/>
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/kimjaehwan"
-                android:layout_gravity="center"
-                android:layout_marginRight="8dp"/>
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <!-- (이름)님을 위한 추천 선수 -->
-    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
         android:layout_marginTop="10dp">
-
-        <!-- 글씨 -->
-        <TextView
+        <View
+            android:background="#142D52"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="김이화님을 위한 추천 선수"
-            android:textSize="23sp"
-            >
+            android:layout_height="5px"
+            android:layout_marginTop="10dp"/>
 
-        </TextView>
-
-        <!-- 박스 -->
+        <!-- 이 달의 추천 선수 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#ced4da"
-            android:layout_marginTop="1dp"
-            android:padding="8dp">
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+            <!-- 글씨 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#142D52"
+                android:text="이 달의 추천 선수"
+                android:textSize="22dp"
+                >
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/kimtaekyeon"
-                android:layout_gravity="center"
-                android:layout_marginLeft="8dp"/>
+            </TextView>
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/parkchikook"
-                android:layout_gravity="center"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"/>
+            <!-- 박스 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginTop="1dp"
+                android:padding="8dp">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/leeyoochan"
-                android:layout_gravity="center"
-                android:layout_marginRight="8dp"/>
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/yanguji"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"/>
 
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/gackbin"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/kimjaehwan"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
-
-    <!-- (이름)님을 위한 추천 유니폼 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp">
-
-        <!-- 글씨 -->
-        <TextView
+        
+        <View
+            android:background="#142D52"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="김이화님을 위한 추천 유니폼"
-            android:textSize="23sp"
-            >
+            android:layout_height="3px"
+            android:layout_marginTop="15dp"/>
 
-        </TextView>
-
-        <!-- 박스 -->
+        <!-- (이름)님을 위한 추천 선수 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#ced4da"
-            android:layout_marginTop="1dp"
-            android:padding="8dp">
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/jungsubin"
-                android:layout_gravity="center"
-                android:layout_marginLeft="8dp"/>
+            <!-- 글씨 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="김이화님을 위한 추천 선수"
+                android:textSize="22dp"
+                android:layout_marginTop="5dp">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/chaesungyong"
-                android:layout_gravity="center"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"/>
+            </TextView>
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/honggunhee"
-                android:layout_gravity="center"
-                android:layout_marginRight="8dp"/>
+            <!-- 박스 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginTop="1dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/kimtaekyeon"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/parkchikook"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/leeyoochan"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
 
         </LinearLayout>
-    </LinearLayout>
 
-    <!-- (~월) 인기 종목 -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="10dp">
-
-        <!-- 글씨 -->
-        <TextView
+        <View
+            android:background="#142D52"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="2월 인기 종목"
-            android:textSize="23sp"
-            >
+            android:layout_height="3px"
+            android:layout_marginTop="15dp"/>
 
-        </TextView>
-
-        <!-- 박스 -->
+        <!-- (이름)님을 위한 추천 유니폼 -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="#ced4da"
-            android:layout_marginTop="1dp"
-            android:padding="8dp">
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/kimjaehwan"
-                android:layout_gravity="center"
-                android:layout_marginLeft="8dp"/>
+            <!-- 글씨 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="김이화님을 위한 추천 유니폼"
+                android:textSize="22dp"
+                >
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/jungsubin"
-                android:layout_gravity="center"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"/>
+            </TextView>
 
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:src="@drawable/yanguji"
-                android:layout_gravity="center"
-                android:layout_marginRight="8dp"/>
+            <!-- 박스 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginTop="1dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/uniforma"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/uniformo"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/uniformaway"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:background="#142D52"
+            android:layout_width="match_parent"
+            android:layout_height="3px"
+            android:layout_marginTop="10dp"/>
+
+        <!-- (~월) 인기 종목 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <!-- 글씨 -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="3월 인기 유니폼"
+                android:textSize="22dp">
+
+            </TextView>
+
+            <!-- 박스 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#FFFFFF"
+                android:layout_marginTop="1dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/uniformaway"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/uniformm"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:src="@drawable/uniforma"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:background="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"/>
 
         </LinearLayout>
     </LinearLayout>
+    </ScrollView>
 </LinearLayout>

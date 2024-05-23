@@ -3,7 +3,6 @@ package com.example.gongu;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +18,7 @@ public class select_team extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), survey.class);
                 startActivity(intent);
             }
         });

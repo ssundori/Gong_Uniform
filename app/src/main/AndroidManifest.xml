@@ -8,9 +8,16 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
 
+    <!-- 네트워크 연결 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- CleartextTraffic 사용 가능 -->
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -21,6 +28,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GongU"
         tools:targetApi="31">
+
         <activity
             android:name=".pay"
             android:exported="false" />
@@ -32,9 +40,7 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-        <activity
-            android:name=".select_team"
-            android:exported="false" />
+
         <activity
             android:name=".login"
             android:exported="true">
@@ -44,6 +50,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+      
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+      
+        <activity
+            android:name=".select_team"
+            android:exported="false" />
+
+        <activity
+            android:name=".survey"
+            android:exported="false" />
+      
+        <activity
+              android:name=".qrpopup"
+              android:theme="@android:style/Theme.Dialog" />
+      
     </application>
 
 </manifest>
