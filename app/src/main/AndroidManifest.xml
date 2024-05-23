@@ -60,7 +60,23 @@
             android:exported="false" />
 
         <activity
-            android:name=".survey"
+            android:name=".survey_1"
+            android:exported="false" />
+
+        <activity
+            android:name=".survey_2"
+            android:exported="false" />
+
+        <activity
+            android:name=".survey_3"
+            android:exported="false" />
+
+        <activity
+            android:name=".survey_last"
+            android:exported="false" />
+
+        <activity
+            android:name=".signup_2"
             android:exported="false" />
       
         <activity

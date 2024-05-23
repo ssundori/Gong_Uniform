@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- 팀 선택 글씨 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="공유니폼 설문조사"
+            android:textSize="25dp"
+            android:textColor="#6750a4"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            >
+
+        </TextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:background="@drawable/border"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_question1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Question 1 -->
+                <TextView
+                    android:id="@+id/txt_question1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:text="1. 야구에 대한 애정도"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23dp"
+                    android:background="#142D52"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:paddingStart="10dp">
+                    <RadioButton
+                        android:id="@+id/q1_rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 매우 좋아한다"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/q1_rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 좋아한다"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/q1_rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 보통이다"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/q1_rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 그닥 좋아하지 않는다"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/q1_rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" 야구를 잘 모른다"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+            <!-- Sign in 버튼 -->
+            <android.widget.Button
+                android:id="@+id/go2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="NEXT"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bin_btn_login"
+                android:layout_marginTop="60px">
+
+            </android.widget.Button>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
