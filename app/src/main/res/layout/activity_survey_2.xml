@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- 팀 선택 글씨 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="공유니폼 설문조사"
+            android:textSize="25dp"
+            android:textColor="#6750a4"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            >
+
+        </TextView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:background="@drawable/border"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+                android:id="@+id/layout_question2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Question 1 -->
+                <TextView
+                    android:id="@+id/txt_question2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:text="2. 야구를 좋아한 기간"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23dp"
+                    android:background="#142D52"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp"
+                    android:paddingStart="10dp">
+                    <RadioButton
+                        android:id="@+id/q2_rb1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="태어났을 때부터"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/q2_rb2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1년 미만"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/q2_rb3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="1~2년"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/q2_rb4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="3~5년"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/q2_rb5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="6년 이상"
+                        android:textSize="20dp"/>
+                    <RadioButton
+                        android:id="@+id/q2_rb6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="크게 관심이 없다"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+
+                <!-- Question 1 -->
+                <TextView
+                    android:id="@+id/txt_question3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:text="3. 좋아하는 선수의 이름을 \n적어주세요."
+                    android:textColor="#FFFFFF"
+                    android:textSize="23dp"
+                    android:background="#142D52"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/PlayerInsert"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:hint="없을 경우 '없다' 작성"
+                    android:textSize="20dp"
+                    android:paddingStart="10dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+            <!-- Sign in 버튼 -->
+            <android.widget.Button
+                android:id="@+id/go3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="NEXT"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/bin_btn_login"
+                android:layout_marginTop="60px">
+
+            </android.widget.Button>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
