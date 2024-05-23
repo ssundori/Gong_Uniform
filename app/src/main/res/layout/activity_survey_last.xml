@@ -61,13 +61,15 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="홈런, 장타" />
+                        android:text="홈런, 장타"
+                        android:textSize="13dp"/>
                     <RadioButton
                         android:id="@+id/q5_rb2"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="안타수" />
+                        android:text="안타수"
+                        android:textSize="13dp"/>
                 </LinearLayout>
 
                 <!-- 두 번째 줄 -->
@@ -83,13 +85,15 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="도루, 발이 빠름" />
+                        android:text="도루, 발이 빠름"
+                        android:textSize="13dp"/>
                     <RadioButton
                         android:id="@+id/q5_rb4"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="볼, 스트라이크 판단력" />
+                        android:text="볼, 스트라이크 판단력"
+                        android:textSize="13dp"/>
                 </LinearLayout>
 
                 <!-- 세 번째 줄 -->
@@ -105,14 +109,15 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="수비력" />
+                        android:text="수비력"
+                        android:textSize="13dp"/>
                     <RadioButton
                         android:id="@+id/q5_rb6"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="전술적인 이해력, 게임을 이해하는 능력"
-                        android:textSize="9dp"/>
+                        android:textSize="13dp"/>
                 </LinearLayout>
 
                 <!-- 네 번째 줄 -->
@@ -128,14 +133,15 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="리더십" />
+                        android:text="리더십"
+                        android:textSize="13dp"/>
                     <RadioButton
                         android:id="@+id/q5_rb8"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="결정적인 순간에 활약하는 능력"
-                        android:textSize="10dp"/>
+                        android:textSize="13dp"/>
                 </LinearLayout>
 
                 <!-- 다섯 번째 줄 -->
@@ -152,13 +158,14 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="다양한 포지션을 소화하는 능력"
-                        android:textSize="10dp"/>
+                        android:textSize="13dp"/>
                     <RadioButton
                         android:id="@+id/q5_rb10"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="꾸준히 우수한 실력" />
+                        android:text="꾸준히 우수한 실력"
+                        android:textSize="13dp"/>
                 </LinearLayout>
 
                 <!-- 여섯 번째 줄 -->
@@ -174,13 +181,15 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="실력 외적인 매력" />
+                        android:text="실력 외적인 매력"
+                        android:textSize="13dp"/>
                     <RadioButton
                         android:id="@+id/q5_rb12"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="잠재력" />
+                        android:text="잠재력"
+                        android:textSize="13dp"/>
                 </LinearLayout>
 
             </LinearLayout>
