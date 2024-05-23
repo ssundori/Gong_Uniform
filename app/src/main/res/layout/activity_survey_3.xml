@@ -74,21 +74,25 @@
                             android:layout_width="0dp"
                             android:layout_weight="0.9"
                             android:layout_height="wrap_content"
-                            android:text="그렇다" />
+                            android:text="그렇다"
+                            android:textSize="13dp"/>
                         <RadioButton
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:text="보통이다" />
+                            android:text="보통이다"
+                            android:textSize="13dp"/>
                         <RadioButton
                             android:layout_width="0dp"
                             android:layout_weight="0.9"                            android:layout_height="wrap_content"
-                            android:text="아니다" />
+                            android:text="아니다"
+                            android:textSize="13dp"/>
                         <RadioButton
                             android:layout_width="0dp"
                             android:layout_weight="1.3"
                             android:layout_height="wrap_content"
-                            android:text="잘 모르겠다"/>
+                            android:text="잘 모르겠다"
+                            android:textSize="13dp"/>
                     </RadioGroup>
                 </LinearLayout>
 
@@ -117,21 +121,25 @@
                             android:layout_width="0dp"
                             android:layout_weight="0.9"
                             android:layout_height="wrap_content"
-                            android:text="그렇다" />
+                            android:text="그렇다"
+                            android:textSize="13dp"/>
                         <RadioButton
                             android:layout_width="0dp"
                             android:layout_weight="1"
                             android:layout_height="wrap_content"
-                            android:text="보통이다" />
+                            android:text="보통이다"
+                            android:textSize="13dp"/>
                         <RadioButton
                             android:layout_width="0dp"
                             android:layout_weight="0.9"                            android:layout_height="wrap_content"
-                            android:text="아니다" />
+                            android:text="아니다"
+                            android:textSize="13dp"/>
                         <RadioButton
                             android:layout_width="0dp"
                             android:layout_weight="1.3"
                             android:layout_height="wrap_content"
-                            android:text="잘 모르겠다"/>
+                            android:text="잘 모르겠다"
+                            android:textSize="13dp"/>
                     </RadioGroup>
                 </LinearLayout>
 
