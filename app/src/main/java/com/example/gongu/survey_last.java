@@ -6,18 +6,19 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-public class survey extends AppCompatActivity {
+
+public class survey_last extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_survey);
+        setContentView(R.layout.activity_survey_last);
 
         Button goBackLogin = (Button) findViewById(R.id.gobacklogin);
         goBackLogin.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), login.class);
+                Intent intent = new Intent(getApplicationContext(), signup_2.class);
                 startActivity(intent);
             }
         });
