@@ -8,16 +8,44 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:src="@mipmap/logo">
+        </ImageView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
         android:orientation="vertical">
+
+        <View
+            android:background="#142D52"
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:layout_marginTop="10dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:padding="5dp"
             android:orientation="horizontal"
             android:gravity="center"
-            android:background="#ced4da">
+            android:background="#FFFFFF">
 
             <TextView
                 android:layout_width="0dp"
@@ -25,296 +53,321 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="선수선택"
-                android:textSize="20sp">
-
-            </TextView>
+                android:textColor="#142D52"
+                android:textSize="20sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="유니폼"
-                android:textSize="20sp">
-
-            </TextView>
+                android:textColor="#142D52"
+                android:textSize="20sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="사이즈"
-                android:textSize="20sp">
-
-            </TextView>
+                android:textColor="#142D52"
+                android:textSize="20sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="결제"
-                android:textSize="20sp">
-            </TextView>
+                android:textColor="#142D52"
+                android:textSize="20sp" />
+        </LinearLayout>
 
-    </LinearLayout>
+        <View
+            android:background="#142D52"
+            android:layout_width="match_parent"
+            android:layout_height="5px"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="2dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="5dp"
             android:orientation="horizontal"
-            android:background="#ced4da"
-            android:layout_marginTop="10dp">
-
+            android:background="#FFFFFF">
             <TextView
                 android:id="@+id/txt_selectedPlayer"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="김재환"
-                android:textSize="18sp">
-
-            </TextView>
-
+                android:textColor="#142D52"
+                android:textSize="18sp" />
             <TextView
-                android:id="@+id/txt_selectedUniform"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="밀리터리"
-                android:textSize="18sp">
-
-            </TextView>
-
+                android:textColor="#142D52"
+                android:textSize="18sp" />
             <TextView
                 android:id="@+id/txt_selectedSize"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="미선택"
-                android:textSize="18sp">
-
-            </TextView>
+                android:textColor="#142D52"
+                android:textSize="18sp" />
             <TextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text=""
-                android:textSize="18sp">
-
-            </TextView>
-
+                android:textColor="#142D52"
+                android:textSize="18sp" />
         </LinearLayout>
 
-        <LinearLayout
+        <View
+            android:background="#142D52"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:shape="rectangle"
-            >
+            android:layout_height="5px"
+            android:layout_marginTop="3dp"/>
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@null"
-                android:padding="5dp"
-                android:layout_marginRight="3dp">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="M size"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp">
-                </TextView>
-
-                <!-- background를 지우 언니 효과로 변경 -->
-                <ImageButton
-                    android:id="@+id/Button_sizeM"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:background="@drawable/round_border"
-                    android:src="@drawable/uniforma"
-                    android:layout_gravity="center"
-                    android:scaleType="centerCrop"
-                    android:layout_margin="5dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginLeft="3dp"
-                android:padding="5dp"
-                android:background="@null">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="L size"
-                    android:textSize="20sp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp">
-
-                </TextView>
-
-                <!-- background를 지우 언니 효과로 변경 -->
-                <ImageButton
-                    android:id="@+id/Button_sizeL"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:background="@drawable/round_border"
-                    android:src="@drawable/uniforma"
-                    android:layout_gravity="center"
-                    android:scaleType="centerCrop"
-                    android:layout_margin="5dp"/>
-            </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:orientation="horizontal"
-            android:background="#ced4da"
-            android:layout_marginTop="10dp">
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-            <TextView
-                android:id="@+id/txt_stockM"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2.5"
-                android:gravity="center"
-                android:text="16"
-                android:textSize="20sp">
-
-            </TextView>
-            <TextView
-                android:layout_width="0dp"
-                android:layout_weight="2.5"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="재고량"
-                android:textSize="15sp">
-
-            </TextView>
-
-            <TextView
-                android:id="@+id/txt_stockL"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="2.5"
-                android:gravity="center"
-                android:text="27"
-                android:textSize="20sp">
-
-            </TextView>
-            <View
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:padding="5dp"
-            android:orientation="vertical"
-            android:background="@null"
-            android:layout_marginTop="30dp">
-
-            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="left"
-                android:text="# 유의사항"
-                android:textSize="20sp"
-                android:layout_marginBottom="5dp">
-
-            </TextView>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="110dp"
                 android:orientation="vertical"
-                android:background="#ced4da">
-
-                <TextView
+                android:background="#FFFFFF">
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:background="@null"
-                    android:text=" - 남자는 L size, 여자는 M size를 추천드립니다."
-                    android:textSize="18sp">
-                </TextView>
-                <TextView
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:shape="rectangle"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@null"
+                        android:padding="5dp"
+                        android:layout_marginRight="3dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="M size"
+                            android:textSize="20dp"
+                            android:textColor="#142D52"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+                        </TextView>
+
+                        <!-- background를 지우 언니 효과로 변경 -->
+                        <ImageButton
+                            android:id="@+id/Button_sizeM"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@drawable/round_border"
+                            android:src="@drawable/uniforma"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="5dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="3dp"
+                        android:padding="5dp"
+                        android:background="@null">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="L size"
+                            android:textSize="20dp"
+                            android:textColor="#142D52"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp">
+
+                        </TextView>
+
+                        <!-- background를 지우 언니 효과로 변경 -->
+                        <ImageButton
+                            android:id="@+id/Button_sizeL"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@drawable/round_border"
+                            android:src="@drawable/uniforma"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
-                    android:background="@null"
-                    android:text=" - 오염이 없는 상태로 교환 가능합니다."
-                    android:textSize="18sp">
-                </TextView>
-                <TextView
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:background="#DFE4EB"
+                    android:layout_marginTop="5dp">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/txt_stockM"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:text="16"
+                        android:textSize="20dp">
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2.5"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="재고량"
+                        android:textSize="15dp">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/txt_stockL"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.5"
+                        android:gravity="center"
+                        android:text="27"
+                        android:textSize="20dp">
+
+                    </TextView>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="left"
+                    android:orientation="vertical"
                     android:background="@null"
-                    android:text=""
-                    android:textSize="18sp">
+                    android:layout_marginTop="15dp">
 
-                </TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="# 유의사항"
+                        android:textColor="#142D52"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="10dp">
 
+                    </TextView>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:orientation="vertical"
+                        android:background="#DFE4EB"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:background="@null"
+                            android:text=" - 남자는 L size, 여자는 M size를 추천드립니다."
+                            android:textSize="18dp">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:background="@null"
+                            android:text=" - 오염이 없는 상태로 교환 가능합니다."
+                            android:textSize="18dp">
+                        </TextView>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:gravity="left"
+                            android:background="@null"
+                            android:text=""
+                            android:textSize="18dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
             </LinearLayout>
+        </ScrollView>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:padding="10dp"
-                android:gravity="center">
+        <RelativeLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/rstoru"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="이전"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_weight="1"
-                    android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/rstoru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이전"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
 
-                <Button
-                    android:id="@+id/rstopay"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:text="결제하기"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_weight="1"
-                    android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/rstopay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="결제하기"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"/>
 
-                <!--<Button
-                    android:id="@+id/button_temp_pay"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="임시_결제하기"
-                    android:layout_gravity="end|bottom"
-                    android:layout_marginBottom="20dp"
-                    android:layout_marginEnd="20dp"/>-->
-            </LinearLayout>
-        </LinearLayout>
+
+            <!--<Button
+                android:id="@+id/button_temp_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="임시_결제하기"
+                android:layout_gravity="end|bottom"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"/>-->
+        </RelativeLayout>
+
+        <View
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"/>
+
     </LinearLayout>
 
 </LinearLayout>

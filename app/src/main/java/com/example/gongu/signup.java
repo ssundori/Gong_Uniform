@@ -2,6 +2,7 @@ package com.example.gongu;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
@@ -29,8 +30,18 @@ public class signup extends AppCompatActivity {
         TextInputEditText Name = findViewById(R.id.SignUpName);
         TextInputEditText Email = findViewById(R.id.SignUpEmail);
         TextInputEditText Password = findViewById(R.id.SignUpPassword);
-        TextInputEditText SelectedTeam = findViewById(R.id.SignUpSelectedTeam);
         TextInputEditText Account = findViewById(R.id.SignUpAccount);
+
+        Button TeamSurvey = findViewById(R.id.SignUpSelectTeamSurvey);
+
+        TeamSurvey.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), select_team.class);
+                startActivity(intent);
+            }
+        });
 
         // Sign up 버튼
         Button createUserButton = findViewById(R.id.createUserBtn);
@@ -44,7 +55,8 @@ public class signup extends AppCompatActivity {
             String name = String.valueOf(Name.getText());
             String email = String.valueOf(Email.getText());
             String password = String.valueOf(Password.getText());
-            String selectedteam = String.valueOf(SelectedTeam.getText());
+            // String selectedteam = String.valueOf(SelectedTeam.getText());
+            String selectedteam = "DOOSAN";
             String account = String.valueOf(Account.getText());
 
             // 생성할 User
@@ -52,6 +64,7 @@ public class signup extends AppCompatActivity {
             user.setName(name);
             user.setEmail(email);
             user.setPassword(password);
+            // user.setSelectedteam(selectedteam);
             user.setSelectedteam(selectedteam);
             user.setAccount(account);
 

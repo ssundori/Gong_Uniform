@@ -3,22 +3,22 @@ package com.example.gongu;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class select_team extends AppCompatActivity {
+public class survey_2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_team);
+        setContentView(R.layout.activity_survey_2);
 
-        LinearLayout dusanButton = (LinearLayout) findViewById(R.id.DusanBtn);
-        dusanButton.setOnClickListener(new View.OnClickListener() {
+        Button go3 = (Button) findViewById(R.id.go3);
+        go3.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), survey_1.class);
+                Intent intent = new Intent(getApplicationContext(), survey_3.class);
                 startActivity(intent);
             }
         });

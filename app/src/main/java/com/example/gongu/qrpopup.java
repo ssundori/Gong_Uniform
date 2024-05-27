@@ -25,7 +25,7 @@ public class qrpopup extends Dialog {
     public qrpopup(@NonNull Context context) {
         super(context);
         setContentView(R.layout.activity_qrpopup);
-        qrimage = findViewById(R.id.imageview_QR_popup);
+        // qrimage = findViewById(R.id.imageview_QR_popup);
         button_shutdown = findViewById(R.id.button_shutdown);
 
         button_shutdown.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +36,7 @@ public class qrpopup extends Dialog {
         });
 
         // QR 코드 생성
-        generateQRCode("QR코드 발급 완료");
+        generateQRCode("김재환 밀리터리 M");
     }
 
     // QR 코드를 생성하고 ImageView에 표시하는 메서드
@@ -52,4 +52,3 @@ public class qrpopup extends Dialog {
         }
     }
 }
-
