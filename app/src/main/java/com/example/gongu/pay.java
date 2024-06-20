@@ -65,7 +65,7 @@ public class pay extends AppCompatActivity {
         });
 
 
-        // imageview_QR = (ImageView)findViewById(R.id.imageview_QR);
+        imageview_QR = (ImageView)findViewById(R.id.imageview_QR);
         text = "QR코드 발급 완료";
 
         MultiFormatWriter multiFormatWriter = new MultiFormatWriter();

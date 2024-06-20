@@ -47,7 +47,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/SignUpName"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_margin="5dp"
         android:textColorHint="#000000"
         android:hint="김이화" />
@@ -68,7 +68,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/SignUpEmail"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_margin="5dp"
         android:textColorHint="#000000"
         android:hint="kim@ewhain.net" />
@@ -91,7 +91,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/SignUpAccount"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_margin="5dp"
         android:textColorHint="#000000"
         android:hint="000-000-0000"/>
@@ -113,7 +113,7 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/SignUpPassword"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_margin="5dp"
         android:textColorHint="#000000"
         android:hint="qwer1234" />
@@ -136,7 +136,7 @@
         android:layout_width="match_parent"
         android:gravity="left"
         android:background="#FFFFFF"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
         android:layout_margin="5dp"
         android:textSize="18dp"
         android:text="OK"

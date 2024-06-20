@@ -44,19 +44,19 @@
             app:layout_constraintTop_toBottomOf="@+id/txt_QRtitle"
             app:layout_constraintVertical_bias="0.0">
 
-            <!--<ImageView
+            <ImageView
                 android:id="@+id/imageview_QR_popup"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
-            </ImageView>-->
+            </ImageView>
 
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/imageview_QR_popup_temp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:background="@null"
                 android:src="@drawable/qrtemp">
-            </ImageView>
+            </ImageView>-->
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
@@ -66,7 +66,7 @@
             android:id="@+id/linear_layout"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent">>
+            app:layout_constraintStart_toStartOf="parent">
             <View
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
