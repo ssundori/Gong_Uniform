@@ -25,7 +25,7 @@ public class qrpopup extends Dialog {
     public qrpopup(@NonNull Context context) {
         super(context);
         setContentView(R.layout.activity_qrpopup);
-        // qrimage = findViewById(R.id.imageview_QR_popup);
+        qrimage = findViewById(R.id.imageview_QR_popup);
         button_shutdown = findViewById(R.id.button_shutdown);
 
         button_shutdown.setOnClickListener(new View.OnClickListener() {
